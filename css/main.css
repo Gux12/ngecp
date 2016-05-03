@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background: #3ca2e0;
+    background-size: cover;
+    font-family:"楷体";
+}
+
+* {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-mynavbar {
+    background-color: #3ca2e0;
+    border-color: #e7e7e7;
+}
+
+.navbar-mynavbar .navbar-brand {
+    color: #777;
+}
+
+.navbar-mynavbar .navbar-brand:hover,
+.navbar-mynavbar .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.navbar-mynavbar .navbar-text {
+    color: #777;
+}
+
+.navbar-mynavbar .navbar-nav > li > a {
+    color: #777;
+}
+
+.navbar-mynavbar .navbar-nav > li > a:hover,
+.navbar-mynavbar .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+
+.navbar-mynavbar .navbar-nav > .active > a,
+.navbar-mynavbar .navbar-nav > .active > a:hover,
+.navbar-mynavbar .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.navbar-mynavbar .navbar-nav > .disabled > a,
+.navbar-mynavbar .navbar-nav > .disabled > a:hover,
+.navbar-mynavbar .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.navbar-mynavbar .navbar-toggle {
+    border-color: #ddd;
+}
+
+.navbar-mynavbar .navbar-toggle:hover,
+.navbar-mynavbar .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.navbar-mynavbar .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-mynavbar .navbar-collapse,
+.navbar-mynavbar .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.navbar-mynavbar .navbar-nav > .open > a,
+.navbar-mynavbar .navbar-nav > .open > a:hover,
+.navbar-mynavbar .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-mynavbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.navbar-mynavbar .navbar-link {
+    color: #777;
+}
+
+.navbar-mynavbar .navbar-link:hover {
+    color: #333;
+}
+
+.navbar-mynavbar .btn-link {
+    color: #777;
+}
+
+.navbar-mynavbar .btn-link:hover,
+.navbar-mynavbar .btn-link:focus {
+    color: #333;
+}
+
+.navbar-mynavbar .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-mynavbar .btn-link:hover,
+.navbar-mynavbar .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-mynavbar .btn-link:focus {
+    color: #ccc;
+}
+
+.input-group {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
+}
+
+.form-no-border {
+    border: 0px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0px 0;
+}
+
+.form-no-border:focus {
+    border: 0px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
+}
+
+.input-group-addon {
+    padding: 10px 12px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 0px;
+    border-radius: 6px;
+}
+
+i {
+    color: #3ca2e0;
+}
+
+i:hover {
+    color: #3ca2e0;
+}
