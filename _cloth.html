@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate-animo.min.css">
+    <link rel="stylesheet" href="css/buttons.min.css">
+    <link rel="stylesheet" href="css/flat-ui.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!--<style>-->
+        <!--body {-->
+            <!--background: #3ca2e0;-->
+            <!--background-size: cover;-->
+            <!--animation: myfirst 10s infinite ease-in-out;-->
+            <!-- -webkit-animation: myfirst 10s infinite ease-in-out;-->
+            <!--/* Safari and Chrome */-->
+        <!--}-->
+
+        <!--@keyframes myfirst {-->
+            <!--0% {-->
+                <!--background: #3ca2e0;-->
+            <!--}-->
+            <!--50% {-->
+                <!--background: #3ca290;-->
+            <!--}-->
+            <!--100% {-->
+                <!--background: #3ca2e0;-->
+            <!--}-->
+        <!--}-->
+
+        <!--@-webkit-keyframes myfirst-->
+            <!--/* Safari and Chrome */-->
+
+        <!--{-->
+            <!--0% {-->
+                <!--background: #3ca2e0;-->
+            <!--}-->
+            <!--50% {-->
+                <!--background: #3ca290;-->
+            <!--}-->
+            <!--100% {-->
+                <!--background: #3ca2e0;-->
+            <!--}-->
+        <!--}-->
+    <!--</style>-->
+</head>
+
+<body>
+<div class="container-fluid" style="display: table">
+    <div class="row" style="margin-top: 100px;">
+        <div class="col-sm-6" style="width: 400px;height: 600px;">
+            <!--<iframe src="/cloth3" frameborder="0" id="web3d_cloth" height="100%"></iframe>-->
+            <img src="cloth.png" style="width: 400px;height: 600px;">
+        </div>
+        <div class="col-sm-6" style="width: 400px;margin-left: 200px;margin-top: 20px;">
+            <div style="text-align: center;"><strong style="color: black;">PETITE Neppy Chambray Shirt</strong></div>
+            <div style="text-align: center;font-size: small;color: black;">32.00</div>
+            <div class="row" style="margin-top: 20px;height: 65px;">
+                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                    <div class="row"><img src="img/logo/胸围2.png" style="width: 50px;margin-top: 5px;"></div>
+                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
+                </div>
+                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                    <div class="slider" id="slider1" style="margin-top: 28px;width: 100%;"></div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;height: 65px;">
+                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                    <div class="row"><img src="img/logo/腰围2.png" style="width: 50px;margin-top: 5px;"></div>
+                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
+                </div>
+                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                    <div class="slider" id="slider2" style="margin-top: 28px;width: 100%;"></div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;height: 65px;">
+                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                    <div class="row"><img src="img/logo/肩宽2.png" style="width: 50px;margin-top: 5px;"></div>
+                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
+                </div>
+                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                    <div class="slider" id="slider3" style="margin-top: 28px;width: 100%;"></div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;height: 65px;">
+                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                    <div class="row"><img src="img/logo/面料2.png" style="width: 50px;margin-top: 5px;"></div>
+                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
+                </div>
+                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                    <!--<div class="slider" id="slider4" style="margin-top: 28px;width: 100%;"></div>-->
+                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                        <img class="change-size-btn" src="img/matrial/1.jpg" style="width: 40px;margin-top: 5px;">
+                    </div>
+                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                        <img class="change-size-btn" src="img/matrial/2.jpg" style="width: 40px;margin-top: 5px;">
+                    </div>
+                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                        <img class="change-size-btn" src="img/matrial/3.jpg" style="width: 40px;margin-top: 5px;">
+                    </div>
+                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                        <img class="change-size-btn" src="img/matrial/4.jpg" style="width: 40px;margin-top: 5px;">
+                    </div>
+                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                        <img class="change-size-btn" src="img/matrial/5.jpg" style="width: 40px;margin-top: 5px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;height: 65px;">
+                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                    <div class="row"><img src="img/logo/领口2.png" style="width: 50px;margin-top: 5px;"></div>
+                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
+                </div>
+                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                    <div class="slider" id="slider5" style="margin-top: 28px;width: 100%;"></div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;height: 65px;">
+                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                    <div class="row"><img src="img/logo/袖口2.png" style="width: 50px;margin-top: 5px;"></div>
+                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
+                </div>
+                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                    <div class="slider" id="slider6" style="margin-top: 28px;width: 100%;"></div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;height: 65px;">
+                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                    <div class="row"><img src="img/logo/尺寸2.png" style="width: 50px;margin-top: 5px;"></div>
+                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
+                </div>
+                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                    <div class="slider" id="slider7" style="margin-top: 28px;width: 100%;"></div>
+                </div>
+            </div>
+
+
+            <button class="btn btn-default btn-wide btn-info" style="margin-top: 40px; width: 60%; margin-left: 80px;">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script src="js/vendor/animo.min.js"></script>
+<script src="js/vendor/flat-ui.js"></script>
+<script src="js/vendor/video.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        // slider
+        var $slider = $(".slider");
+        $slider.slider({
+            min: 0,
+            max: 100,
+            value: 20,
+            orientation: "horizontal",
+            range: "min"
+        });
+        $("#slider1").slider({
+            value: 70
+        });
+        $("#slider2").slider({
+            value: 30
+        });
+        $("#slider3").slider({
+            value: 50
+        });
+        $("#slider4").slider({
+            value: 50
+        });
+        $("#slider5").slider({
+            value: 60
+        });
+        $("#slider6").slider({
+            value: 70
+        });
+        $("#slider7").slider({
+            value: 40
+        });
+//        $(".ui-slider").css('background-color','white');
+        $(".ui-slider-range").css('background-color','#3ca2e0');
+        $(".ui-slider-handle").css('background-color','#3489bf');
+        $(".change-size-btn").click(function() {
+            if ($(this).css("width") == "45px") {
+                $(this).css("width", "40px");
+            } else {
+                $(".change-size-btn").css("width", "40px");
+                $(this).css("width", "45px");
+            }
+        });
+    });
+</script>
