@@ -4,9 +4,17 @@ $(document).ready(function() {
     winHeight = window.innerHeight;
     $('body').css('height', winHeight);
     $('body').css('width', winWidth);
+    $('#hello1').css('font-size', winWidth / 1920 * 88);
+    $('#hello2').css('font-size', winWidth / 1920 * 40);
+    $('#hello-input > input').css('font-size', winWidth / 1920 * 40);
+    $('#hello-input > div > i').css('font-size', winWidth / 1920 * 40);
     $(window).resize(function() {
         $('body').css('height', window.innerHeight);
         $('body').css('width', window.innerWidth);
+        $('#hello1').css('font-size', winWidth / 1920 * 88);
+        $('#hello2').css('font-size', winWidth / 1920 * 40);
+        $('#hello-input > input').css('font-size', winWidth / 1920 * 40);
+        $('#hello-input > div > i').css('font-size', winWidth / 1920 * 40);
     })
 
     // var isBordered = 0;
@@ -21,11 +29,11 @@ $(document).ready(function() {
     //     };
     // }
     // 
-    $('#hello1').animo( { animation: 'fadeInLeft' , duration: 3 } );
-    $('#hello2').animo( { animation: 'fadeInRight' , duration: 3 ,delay: 0.5} );
-    $('#hello-input').animo( { animation: 'fadeInUp' , duration: 3 ,delay:1 } );
+    $('#hello1').animo({ animation: 'fadeInLeft', duration: 3 });
+    $('#hello2').animo({ animation: 'fadeInRight', duration: 3, delay: 0.5 });
+    $('#hello-input').animo({ animation: 'fadeInUp', duration: 3, delay: 1 });
 
     // $('.lightbox-item').each(function(index, el) {
-    // 	$(this).css('height', $(this).width());
+    //  $(this).css('height', $(this).width());
     // });
 });
