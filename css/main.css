@@ -8,8 +8,15 @@
     font-family:'楷体';
 }
 
+i {
+    color: #3ca2e0;
+}
+
+i:hover {
+    color: #3ca2e0;
+}
 .navbar-mynavbar {
-    background-color: transparent;
+    background-color: #3ca2e0;
     border-color: rgba(255,255,255,0.2);
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.12);
     border-radius: 0px;
@@ -137,9 +144,18 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
 .dropdown-menu{
 	background-color: rgba(255,255,255,1);
 }
-.dropdown-menu > li > a:hover
+/*.dropdown-menu > li > a:hover
 .dropdown-menu > li > a:focus{
 	background-color: rgba(255,255,255,0.8);
+}*/
+
+.dropdown-menu-inverse{
+    background-color: rgba(60,162,224,0.9);
+}
+
+.dropdown-menu-inverse > li > a, 
+.dropdown-menu-inverse > li > a > i{
+    color: #fff;
 }
 
 .input-group {
@@ -165,14 +181,6 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
     background-color: #ffffff;
     border: 0px;
     border-radius: 6px;
-}
-
-i {
-    color: #3ca2e0;
-}
-
-i:hover {
-    color: #3ca2e0;
 }
 
 .lightbox-item{
