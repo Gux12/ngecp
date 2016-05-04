@@ -21,7 +21,11 @@ $(document).ready(function() {
     //     };
     // }
     // 
-    $('#hello1').animo( { animation: 'fadeInLeft' , duration: 5 } );
-    $('#hello2').animo( { animation: 'fadeInRight' , duration: 5 } );
-    $('#hello-input').animo( { animation: 'fadeInUp' , duration: 5 } );
+    $('#hello1').animo( { animation: 'fadeInLeft' , duration: 3 } );
+    $('#hello2').animo( { animation: 'fadeInRight' , duration: 3 ,delay: 0.5} );
+    $('#hello-input').animo( { animation: 'fadeInUp' , duration: 3 ,delay:1 } );
+
+    // $('.lightbox-item').each(function(index, el) {
+    // 	$(this).css('height', $(this).width());
+    // });
 });

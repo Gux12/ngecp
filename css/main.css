@@ -2,19 +2,17 @@
    Author's custom styles
    ========================================================================== */
 
-body {
-    background: #3ca2e0;
-    background-size: cover;
-}
+
 
 * {
     color: rgba(255, 255, 255, 1);
 }
 
 .navbar-mynavbar {
-    background-color: #3ca2e0;
+    background-color: transparent;
     border-color: rgba(255,255,255,0.2);
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px;
 }
 
 .navbar-mynavbar .navbar-brand {
@@ -127,6 +125,15 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
     color: #ccc;
 }
 
+.navbar-mynavbar{
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.navbar-mynavbar:hover{
+	opacity: 1;
+}
+
 .dropdown-menu{
 	background-color: rgba(255,255,255,1);
 }
@@ -147,7 +154,7 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
 
 .form-no-border:focus {
     border: 0px;
-    height: auto;
+    /*height: auto;*/
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
 }
 
@@ -166,4 +173,7 @@ i {
 
 i:hover {
     color: #3ca2e0;
+}
+
+.lightbox-item{
 }
