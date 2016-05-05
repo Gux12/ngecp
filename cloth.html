@@ -17,142 +17,190 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <!--<style>-->
-        <!--body {-->
-            <!--background: #3ca2e0;-->
-            <!--background-size: cover;-->
-            <!--animation: myfirst 10s infinite ease-in-out;-->
-            <!-- -webkit-animation: myfirst 10s infinite ease-in-out;-->
-            <!--/* Safari and Chrome */-->
-        <!--}-->
-
-        <!--@keyframes myfirst {-->
-            <!--0% {-->
-                <!--background: #3ca2e0;-->
-            <!--}-->
-            <!--50% {-->
-                <!--background: #3ca290;-->
-            <!--}-->
-            <!--100% {-->
-                <!--background: #3ca2e0;-->
-            <!--}-->
-        <!--}-->
-
-        <!--@-webkit-keyframes myfirst-->
-            <!--/* Safari and Chrome */-->
-
-        <!--{-->
-            <!--0% {-->
-                <!--background: #3ca2e0;-->
-            <!--}-->
-            <!--50% {-->
-                <!--background: #3ca290;-->
-            <!--}-->
-            <!--100% {-->
-                <!--background: #3ca2e0;-->
-            <!--}-->
-        <!--}-->
+    <!--body {-->
+    <!--background: #3ca2e0;-->
+    <!--background-size: cover;-->
+    <!--animation: myfirst 10s infinite ease-in-out;-->
+    <!-- -webkit-animation: myfirst 10s infinite ease-in-out;-->
+    <!--/* Safari and Chrome */-->
+    <!--}-->
+    <!--@keyframes myfirst {-->
+    <!--0% {-->
+    <!--background: #3ca2e0;-->
+    <!--}-->
+    <!--50% {-->
+    <!--background: #3ca290;-->
+    <!--}-->
+    <!--100% {-->
+    <!--background: #3ca2e0;-->
+    <!--}-->
+    <!--}-->
+    <!--@-webkit-keyframes myfirst-->
+    <!--/* Safari and Chrome */-->
+    <!--{-->
+    <!--0% {-->
+    <!--background: #3ca2e0;-->
+    <!--}-->
+    <!--50% {-->
+    <!--background: #3ca290;-->
+    <!--}-->
+    <!--100% {-->
+    <!--background: #3ca2e0;-->
+    <!--}-->
+    <!--}-->
     <!--</style>-->
 </head>
 
 <body>
-<div class="container-fluid" style="display: table">
-    <div class="row" style="margin-top: 50px;">
-        <div class="col-sm-6" style="width: 400px;height: 600px;margin-top: 50px;">
-            <!--<iframe src="/cloth3" frameborder="0" id="web3d_cloth" height="100%"></iframe>-->
-            <img src="cloth.png" style="width: 400px;height: 600px;">
+    <nav class="navbar navbar-mynavbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Buy+</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的需求<span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-inverse" style="text-align: center;">
+                            <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车</a></li>
+                            <li><a href="#"><i class="fa fa-bullseye" aria-hidden="true"></i> 预测需求</a></li>
+                            <li><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 周期需求</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">我的供给</a></li>
+                    <li><a href="#">我的空间</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">南艺璇<span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-inverse">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">我的消息</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-no-border" placeholder="我好想搜点什么">
+                            <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true" style="cursor: pointer;"></i></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="col-sm-6" style="width: 400px;margin-left: 200px;margin-top: 20px;">
-            <div style="text-align: center;"><strong style="color: black;">PETITE Neppy Chambray Shirt</strong></div>
-            <div style="text-align: center;font-size: small;color: black;">32.00</div>
-            <div class="row" style="margin-top: 20px;height: 65px;">
-                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
-                    <div class="row"><img src="img/logo/胸围2.png" style="width: 50px;margin-top: 5px;"></div>
-                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
-                </div>
-                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
-                    <div class="slider" id="slider1" style="margin-top: 28px;width: 100%;"></div>
-                </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid" style="display: table">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-sm-6" style="width: 400px;height: 600px;margin-top: 50px;">
+                <!--<iframe src="/cloth3" frameborder="0" id="web3d_cloth" height="100%"></iframe>-->
+                <img src="cloth.png" style="width: 400px;height: 600px;">
             </div>
-            <div class="row" style="margin-top: 10px;height: 65px;">
-                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
-                    <div class="row"><img src="img/logo/腰围2.png" style="width: 50px;margin-top: 5px;"></div>
-                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">腰围</strong></div>
-                </div>
-                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
-                    <div class="slider" id="slider2" style="margin-top: 28px;width: 100%;"></div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 10px;height: 65px;">
-                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
-                    <div class="row"><img src="img/logo/肩宽2.png" style="width: 50px;margin-top: 5px;"></div>
-                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">肩宽</strong></div>
-                </div>
-                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
-                    <div class="slider" id="slider3" style="margin-top: 28px;width: 100%;"></div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 10px;height: 65px;">
-                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
-                    <div class="row"><img src="img/logo/面料2.png" style="width: 50px;margin-top: 5px;"></div>
-                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">面料</strong></div>
-                </div>
-                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
-                    <!--<div class="slider" id="slider4" style="margin-top: 28px;width: 100%;"></div>-->
-                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
-                        <img class="change-size-btn" src="img/matrial/1.jpg" style="width: 40px;margin-top: 5px;">
+            <div class="col-sm-6" style="width: 400px;margin-left: 200px;margin-top: 20px;">
+                <div style="text-align: center;"><strong style="color: black;">PETITE Neppy Chambray Shirt</strong></div>
+                <div style="text-align: center;font-size: small;color: black;">32.00</div>
+                <div class="row" style="margin-top: 20px;height: 65px;">
+                    <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                        <div class="row"><img src="img/logo/胸围2.png" style="width: 50px;margin-top: 5px;"></div>
+                        <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">胸围</strong></div>
                     </div>
-                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
-                        <img class="change-size-btn" src="img/matrial/2.jpg" style="width: 40px;margin-top: 5px;">
-                    </div>
-                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
-                        <img class="change-size-btn" src="img/matrial/3.jpg" style="width: 40px;margin-top: 5px;">
-                    </div>
-                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
-                        <img class="change-size-btn" src="img/matrial/4.jpg" style="width: 40px;margin-top: 5px;">
-                    </div>
-                    <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
-                        <img class="change-size-btn" src="img/matrial/5.jpg" style="width: 40px;margin-top: 5px;">
+                    <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                        <div class="slider" id="slider1" style="margin-top: 28px;width: 100%;"></div>
                     </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 10px;height: 65px;">
-                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
-                    <div class="row"><img src="img/logo/领口2.png" style="width: 50px;margin-top: 5px;"></div>
-                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">领口</strong></div>
+                <div class="row" style="margin-top: 10px;height: 65px;">
+                    <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                        <div class="row"><img src="img/logo/腰围2.png" style="width: 50px;margin-top: 5px;"></div>
+                        <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">腰围</strong></div>
+                    </div>
+                    <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                        <div class="slider" id="slider2" style="margin-top: 28px;width: 100%;"></div>
+                    </div>
                 </div>
-                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
-                    <div class="slider" id="slider5" style="margin-top: 28px;width: 100%;"></div>
+                <div class="row" style="margin-top: 10px;height: 65px;">
+                    <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                        <div class="row"><img src="img/logo/肩宽2.png" style="width: 50px;margin-top: 5px;"></div>
+                        <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">肩宽</strong></div>
+                    </div>
+                    <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                        <div class="slider" id="slider3" style="margin-top: 28px;width: 100%;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 10px;height: 65px;">
-                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
-                    <div class="row"><img src="img/logo/袖口2.png" style="width: 50px;margin-top: 5px;"></div>
-                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">袖口</strong></div>
+                <div class="row" style="margin-top: 10px;height: 65px;">
+                    <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                        <div class="row"><img src="img/logo/面料2.png" style="width: 50px;margin-top: 5px;"></div>
+                        <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">面料</strong></div>
+                    </div>
+                    <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                        <!--<div class="slider" id="slider4" style="margin-top: 28px;width: 100%;"></div>-->
+                        <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                            <img class="change-size-btn" src="img/matrial/1.jpg" style="width: 40px;margin-top: 5px;">
+                        </div>
+                        <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                            <img class="change-size-btn" src="img/matrial/2.jpg" style="width: 40px;margin-top: 5px;">
+                        </div>
+                        <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                            <img class="change-size-btn" src="img/matrial/3.jpg" style="width: 40px;margin-top: 5px;">
+                        </div>
+                        <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                            <img class="change-size-btn" src="img/matrial/4.jpg" style="width: 40px;margin-top: 5px;">
+                        </div>
+                        <div class="col-xs-1" style="overflow: hidden;width: 50px;margin-top: 5px;padding: 0px;">
+                            <img class="change-size-btn" src="img/matrial/5.jpg" style="width: 40px;margin-top: 5px;">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
-                    <div class="slider" id="slider6" style="margin-top: 28px;width: 100%;"></div>
+                <div class="row" style="margin-top: 10px;height: 65px;">
+                    <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                        <div class="row"><img src="img/logo/领口2.png" style="width: 50px;margin-top: 5px;"></div>
+                        <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">领口</strong></div>
+                    </div>
+                    <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                        <div class="slider" id="slider5" style="margin-top: 28px;width: 100%;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 10px;height: 65px;">
-                <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
-                    <div class="row"><img src="img/logo/尺寸2.png" style="width: 50px;margin-top: 5px;"></div>
-                    <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">尺寸</strong></div>
+                <div class="row" style="margin-top: 10px;height: 65px;">
+                    <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                        <div class="row"><img src="img/logo/袖口2.png" style="width: 50px;margin-top: 5px;"></div>
+                        <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">袖口</strong></div>
+                    </div>
+                    <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                        <div class="slider" id="slider6" style="margin-top: 28px;width: 100%;"></div>
+                    </div>
                 </div>
-                <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
-                    <div class="slider" id="slider7" style="margin-top: 28px;width: 100%;"></div>
+                <div class="row" style="margin-top: 10px;height: 65px;">
+                    <div class="col-xs-2" style="text-align: center;background-color: white;height: inherit;">
+                        <div class="row"><img src="img/logo/尺寸2.png" style="width: 50px;margin-top: 5px;"></div>
+                        <div style="font-size: 10px;margin-top: -10px;"><strong style="color: black;">尺寸</strong></div>
+                    </div>
+                    <div class="col-xs-10" style="background-color: white;height: inherit;margin-left: 10px;width: 80%;">
+                        <div class="slider" id="slider7" style="margin-top: 28px;width: 100%;"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 40px;">
-                <button class="btn btn-default btn-wide btn-info" style="width: 45%;margin-left: 15px;">
-                    协同设计
-                </button>
-                <button class="btn btn-default btn-wide btn-info" style="width: 45%;margin-left: 5px;">
-                    确认订单
-                </button>
+                <div class="row" style="margin-top: 40px;">
+                    <button class="btn btn-default btn-wide btn-info" style="width: 45%;margin-left: 15px;">
+                        协同设计
+                    </button>
+                    <button class="btn btn-default btn-wide btn-info" style="width: 45%;margin-left: 5px;">
+                        确认订单
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 
 </html>
@@ -162,47 +210,47 @@
 <script src="js/vendor/video.js"></script>
 <script src="js/main.js"></script>
 <script>
-    $(document).ready(function () {
-        // slider
-        var $slider = $(".slider");
-        $slider.slider({
-            min: 0,
-            max: 100,
-            value: 20,
-            orientation: "horizontal",
-            range: "min"
-        });
-        $("#slider1").slider({
-            value: 70
-        });
-        $("#slider2").slider({
-            value: 30
-        });
-        $("#slider3").slider({
-            value: 50
-        });
-        $("#slider4").slider({
-            value: 50
-        });
-        $("#slider5").slider({
-            value: 60
-        });
-        $("#slider6").slider({
-            value: 70
-        });
-        $("#slider7").slider({
-            value: 40
-        });
-//        $(".ui-slider").css('background-color','white');
-        $(".ui-slider-range").css('background-color','#3ca2e0');
-        $(".ui-slider-handle").css('background-color','#3489bf');
-        $(".change-size-btn").click(function() {
-            if ($(this).css("width") == "45px") {
-                $(this).css("width", "40px");
-            } else {
-                $(".change-size-btn").css("width", "40px");
-                $(this).css("width", "45px");
-            }
-        });
+$(document).ready(function() {
+    // slider
+    var $slider = $(".slider");
+    $slider.slider({
+        min: 0,
+        max: 100,
+        value: 20,
+        orientation: "horizontal",
+        range: "min"
     });
+    $("#slider1").slider({
+        value: 70
+    });
+    $("#slider2").slider({
+        value: 30
+    });
+    $("#slider3").slider({
+        value: 50
+    });
+    $("#slider4").slider({
+        value: 50
+    });
+    $("#slider5").slider({
+        value: 60
+    });
+    $("#slider6").slider({
+        value: 70
+    });
+    $("#slider7").slider({
+        value: 40
+    });
+    //        $(".ui-slider").css('background-color','white');
+    $(".ui-slider-range").css('background-color', '#3ca2e0');
+    $(".ui-slider-handle").css('background-color', '#3489bf');
+    $(".change-size-btn").click(function() {
+        if ($(this).css("width") == "45px") {
+            $(this).css("width", "40px");
+        } else {
+            $(".change-size-btn").css("width", "40px");
+            $(this).css("width", "45px");
+        }
+    });
+});
 </script>
