@@ -8,6 +8,7 @@ $(document).ready(function() {
     $('#hello2').css('font-size', winWidth / 1920 * 40);
     $('#hello-input > input').css('font-size', winWidth / 1920 * 40);
     $('#hello-input > div > i').css('font-size', winWidth / 1920 * 40);
+    $('.navbar-mynavbar .navbar-nav > li > a').css('font-size', winWidth / 1920 * 16);
     $(window).resize(function() {
         $('body').css('height', window.innerHeight);
         $('body').css('width', window.innerWidth);
@@ -15,6 +16,7 @@ $(document).ready(function() {
         $('#hello2').css('font-size', winWidth / 1920 * 40);
         $('#hello-input > input').css('font-size', winWidth / 1920 * 40);
         $('#hello-input > div > i').css('font-size', winWidth / 1920 * 40);
+        $('.navbar-mynavbar .navbar-nav > li > a').css('font-size', winWidth / 1920 * 16);
     })
 
     // var isBordered = 0;
