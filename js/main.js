@@ -51,4 +51,34 @@ $(document).ready(function() {
            $('#cloth-disp' + pos).animo({ animation: 'fadeInUp', duration: 0.5 ,delay: 0.1*(pos-1),timing: "easy-in"}, findAllCloth(pos + 1));
         }   
     }
+    $('.cloth-disp-origin').hover(function() {
+        $(this).append('<div class="cloth-disp-origin-cover"><button class="button button-caution button-circle button-small button-like" style="margin: auto 10px 10px 10px"><i class="fa fa-heart" style="color: white"></i></button><button class="button button-primary button-pill button-small button-try" style="margin: auto 10px 10px 10px">试试看？</button><button class="button button-circle button-small button-dislike" style="margin: auto 10px 10px 10px"><i class="fa fa-times" style="color: white"></i></button></div>');
+        var X = $(this).position().top;
+        var Y = $(this).position().left;
+        $('.cloth-disp-origin-cover').css({
+            'top': X,
+            'left': Y,
+            'height': $(this).height(),
+            'width': $(this).width(),
+            'padding-top': $(this).height()-50,
+        })
+        $('.button-like').click(function(event) {
+            /* Act on the event */
+        });
+        $('.button-try').click(function(event) {
+            /* Act on the event */
+            window.location.href = 'cloth.html';
+        });
+        $('.button-dislike').click(function(event) {
+            /* Act on the event */
+        });
+        $('.button-like')
+        $('.button-like')
+        $('.cloth-disp-origin-cover').hover();
+    }, function() {
+        $('.cloth-disp-origin-cover').remove();
+    });
+    $('.cloth-disp-origin').click(function(event) {
+        $(this).parent().children('a').trigger('click');
+    });
 });
