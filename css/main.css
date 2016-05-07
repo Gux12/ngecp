@@ -4,7 +4,7 @@
 
 * {
     color: rgba(255, 255, 255, 1);
-    font-weight:bold;
+    font-weight: bold;
     /*    font-family:'楷体';*/
 }
 
@@ -210,8 +210,19 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
 .accordion {
     padding: 20px;
     border-radius: 6px;
-/*    background-color: rgba(60, 162, 224, 0.05);*/
+    background-color: rgba(255,255,255,0.9);
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
+}
+
+.cloth-disp {
+    padding: 20px;
+}
+
+.cloth-disp-origin {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
 }
 
 .lightbox-item {}
