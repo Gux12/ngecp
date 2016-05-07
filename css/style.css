@@ -29,7 +29,7 @@ Modules - reusable parts of our design
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
-  max-width: 900px;
+  max-width: 600px;
   margin-left: 500px;
   /*margin: 0 auto;*/
 }
@@ -49,7 +49,7 @@ html, body {
   height: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 300px) {
   body.new-color-1::before {
     background-color: #c06c69;
   }
@@ -68,7 +68,7 @@ body::before, body::after {
   position: fixed;
   /* trick to remove some annoying flickering on webkit browsers */
   width: 89.8%;
-  max-width: 600px;
+  max-width: 300px;
   left: 50%;
   right: auto;
   -webkit-transform: translateX(-50%);
@@ -143,7 +143,7 @@ header h1 {
   top: 50px;
   bottom: 0;
   /*background-image: url("../img/cd-pattern-small.svg");*/
-  margin-left: 250px;
+  margin-left: 150px;
   background-repeat: repeat-y;
 }
 .cd-service.cd-service-divider::after {
@@ -177,10 +177,10 @@ header h1 {
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.5);
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   .cd-service {
-    min-height: 500px;
-    margin-left: 250px;
+    min-height: 400px;
+    margin-left: 150px;
     padding: 6em 2em;
   }
   .cd-service::before, .cd-service::after {
@@ -195,12 +195,12 @@ header h1 {
   }
   .cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
     min-height: 50px;
-    margin-left: 250px;
+    margin-left: 150px;
     padding: 0;
   }
   .cd-service.cd-service-divider:last-child {
     display: block;
-    margin-left: 250px;
+    margin-left: 150px;
   }
   .cd-service.cd-service-1::before {
     /*background-image: url("../img/cd-icon-1-large.svg");*/
@@ -234,6 +234,7 @@ header h1 {
     transition: color, 0.5s;
   }
   .cd-service h2 {
+    margin-top: -70px;
     font-size: 30px;
     font-size: 1.875rem;
   }
