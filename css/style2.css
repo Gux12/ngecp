@@ -51,7 +51,7 @@ body {
   top: 0;
   width: 50px;
   height: 50px;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   content: '';
 }
 
@@ -75,9 +75,8 @@ body {
 }
 
 .chat-thread li.left:before {
-  right: -10px;
-  background-image: url(../img/person/me_h.jpg);
-  width: 40px;
+  right: -80px;
+  background-image: url(../img/person/me_h.png);
 }
 
 .chat-thread li.left:after {
@@ -95,9 +94,8 @@ body {
 }
 
 .chat-thread li.right:before {
-  left: -20px;
-  background-image: url(../img/person/designer_h.jpg);
-  width: 30px;
+  left: -80px;
+  background-image: url(../img/person/me_h.png);
 }
 
 .chat-thread li.right:after {
