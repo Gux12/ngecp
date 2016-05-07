@@ -95,7 +95,7 @@ body {
 
 .chat-thread li.right:before {
   left: -80px;
-  background-image: url(../img/person/me_h.png);
+  background-image: url(../img/person/designer_h.png);
 }
 
 .chat-thread li.right:after {

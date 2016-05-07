@@ -22,53 +22,94 @@
     <!--material-->
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <script src="js/vendor/material.min.js"></script>
+    <style>
+        i {
+            color: #3ca2e0;
+        }
+    </style>
 </head>
-<body style="background-color: #3e253c">
-<div></div>
+<!--<body style="background-color: #3e253c">-->
+<body>
+<nav class="navbar navbar-mynavbar" style='background-color: transparent;'>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Buy+</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的需求<span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车</a></li>
+                        <li><a href="#"><i class="fa fa-bullseye" aria-hidden="true"></i> 预测需求</a></li>
+                        <li><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 周期需求</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">我的供给</a></li>
+                <li><a href="#">我的空间</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">南艺璇 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="my.html">个人中心</a></li>
+                        <li><a href="#">我的消息</a></li>
+                        <li><a href="#">设置</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">退出登录</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
 <!--<header>-->
 <!--<h1>Icons Filling Effect</h1>-->
 <!--</header>-->
-<div style="position: absolute;margin-left: 100px;margin-top: 80px;width: 300px;">
-    <div class="input-group" style="width:70%;">
-        <input type="text" class="form-control" placeholder="搜索通讯录" id="search-query-3"
-               style=" margin-left: 15px;">
-        <span class="input-group-btn">
-            <button type="submit" class="btn"><span class="fui-search"></span></button>
-        </span>
+<div style="position: absolute;margin-left: 100px;margin-top: 20px;width: 300px;">
+    <div class="input-group" style="text-align: center;margin-top: 20px;margin-left: 20px;width: 60%;" id='hello-input'>
+        <input id='whatINeed' type="text" class="form-control form-no-border" placeholder="搜索通讯录”">
+        <div class="input-group-addon"><i class="fa fa-microphone" aria-hidden="true" style="cursor: pointer;"></i></div>
     </div>
-    <ul class="demo-list-two mdl-list" style="margin-top: 20px;">
-        <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">person</i>
-                    <span style="color: grey;">Bryan Cranston</span>
-                    <span class="mdl-list__item-sub-title">62 Episodes</span>
-                </span>
-                <!--<span class="mdl-list__item-secondary-content">-->
-                    <!--&lt;!&ndash;<span class="mdl-list__item-secondary-info">Actor</span>&ndash;&gt;-->
-                    <!--<a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>-->
-                <!--</span>-->
+    <ul class="demo-list-icon mdl-list" style="margin-top: 20px;">
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+                <!--<i class="material-icons mdl-list__item-icon">person</i>-->
+                <img src="img/person/designer_h.png" style="margin-right: 30px;">
+                顾乡
+            </span>
         </li>
-
-        <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                     <i class="material-icons mdl-list__item-avatar">person</i>
-                     <span style="color: grey;">Aaron Paul</span>
-                     <span class="mdl-list__item-sub-title">62 Episodes</span>
-                </span>
-                <!--<span class="mdl-list__item-secondary-content">-->
-                    <!--<a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>-->
-                <!--</span>-->
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+                <img src="img/person/黄亚东_h.png" style="margin-right: 30px;">
+                黄亚东
+            </span>
         </li>
-        <li class="mdl-list__item mdl-list__item--two-line">
-                <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">person</i>
-                    <span style="color: grey;">Bob Odenkirk</span>
-                    <span class="mdl-list__item-sub-title">62 Episodes</span>
-                    </span>
-                <!--<span class="mdl-list__item-secondary-content">-->
-                    <!--<a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>-->
-                <!--</span>-->
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+                <img src="img/person/me_h.png" style="margin-right: 30px;">
+                南艺璇
+            </span>
+        </li>
+        <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+                <img src="img/person/于超_h.png" style="margin-right: 30px;">
+                于超
+            </span>
         </li>
     </ul>
 </div>
@@ -76,24 +117,29 @@
     <li class="cd-service cd-service-divider"></li>
 
     <li class="cd-service cd-service-1">
+        <div style="height: 220px;width: 200px;background-color: #3ca2e0;margin-left: -190px;margin-top: -90px;"></div>
         <h2>顾 乡</h2>
         <p>成交了1辆北京现代汽车有限公司的途胜SUV，动态成交价￥240,000</p>
         <p>刚刚</p>
     </li> <!-- cd-service -->
 
     <li class="cd-service cd-service-2">
+        <div style="height: 220px;width: 200px;background-color: #3ca2e0;margin-left: -190px;margin-top: -90px;"></div>
         <h2>黄亚东</h2>
         <p>成交了1套雅戈尔设计,北京服装制造厂制造的定制西服，动态成交价¥858</p>
         <p>10分钟前</p>
     </li> <!-- cd-service -->
 
     <li class="cd-service cd-service-3">
+        <!--<img src="img/person/me.png">-->
+        <div style="height: 220px;width: 200px;background-color: #3ca2e0;margin-left: -190px;margin-top: -90px;"></div>
         <h2>我</h2>
         <p>成交了1套张迪设计师设计,北京服装制造厂制造的定制衬衣,动态成交价¥560</p>
         <p>25分钟前</p>
     </li> <!-- cd-service -->
 
     <li class="cd-service cd-service-4">
+        <div style="height: 220px;width: 200px;background-color: #3ca2e0;margin-left: -190px;margin-top: -90px;"></div>
         <h2>于 超</h2>
         <p>成交了2斤北京首农牧场生产的羊肉,动态成交价¥24</p>
         <p>45分钟前</p>
@@ -101,7 +147,7 @@
 
     <li class="cd-service cd-service-divider"></li>
 </ul> <!-- cd-services -->
-<footer style="margin-top: -20px;background-color: #3e253c;"></footer>
+<footer style="margin-top: -20px;background-color: #3ca2e0;"></footer>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/chat_main.js"></script> <!-- Resource jQuery -->
 </body>

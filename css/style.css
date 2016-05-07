@@ -17,8 +17,8 @@ html * {
 body {
   font-size: 100%;
   font-family: "Merriweather", serif;
-  color: #71495b;
-  background-color: #3e253c;
+  /*color: #71495b;*/
+  background-color: #3ca2e0;
 }
 
 /* --------------------------------
@@ -83,7 +83,8 @@ body::before, body::after {
 body::before {
   top: 0;
   /*-webkit-clip-path: circle(165px at center);*/
-  background-color: #f4bd89;
+  /*background-color: #f4bd89;*/
+  background-color: #3ca2e0;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   transition: all 0.8s;
@@ -97,7 +98,7 @@ body::after {
 header {
   position: relative;
   height: 50%;
-  background-color: #3e253c;
+  background-color: #3ca2e0;
   z-index: 2;
 }
 header h1 {
@@ -122,25 +123,27 @@ header h1 {
 .cd-service {
   position: relative;
   z-index: 2;
-  min-height: 0px;
-  /*margin-left: 156px;*/
-  background-color: #3e253c;
+  min-height: 200px;
+  /*margin-top: -20px;*/
+  margin-left: 156px;
+  background-color: #3ca2e0;
   padding: 1em 1em 4em;
 }
 .cd-service::before, .cd-service::after {
   content: '';
   position: absolute;
-  /*width: 50px;*/
+  width: 50px;
+  /*margin-top: -20px;*/
   right: 100%;
   z-index: 2;
 }
 .cd-service::before {
   top: 0;
-  height: 0px;
+  height: 30px;
   background-repeat: no-repeat;
 }
 .cd-service::after {
-  top: 50px;
+  top: 100px;
   bottom: 0;
   /*background-image: url("../img/cd-pattern-small.svg");*/
   margin-left: 150px;
@@ -160,6 +163,7 @@ header h1 {
   /*background-image: url("../img/cd-icon-2-small.svg");*/
 }
 .cd-service.cd-service-3::before {
+  /*background-image: url("../img/cd-pattern-large.svg");*/
   /*background-image: url("../img/cd-icon-3-small.svg");*/
 }
 .cd-service.cd-service-4::before {
@@ -194,7 +198,8 @@ header h1 {
     background-image: url("../img/cd-pattern-large.svg");
   }
   .cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
-    min-height: 50px;
+    margin-top: -140px;
+    min-height: 160px;
     margin-left: 150px;
     padding: 0;
   }
@@ -203,29 +208,23 @@ header h1 {
     margin-left: 150px;
   }
   .cd-service.cd-service-1::before {
-    /*background-image: url("../img/cd-icon-1-large.svg");*/
-    /*background-image: url("../img/person/designer.jpg");*/
-    background-image: url("../img/client2.jpg");
-    width: 200px;
+    background-image: url("../img/person/designer.png");
+    /*background-image: url("../img/client2.jpg");*/
+    width: 140px;
     /*-webkit-clip-path: circle(165px at center);*/
   }
   .cd-service.cd-service-2::before {
-    /*background-image: url("../img/cd-icon-2-large.svg");*/
-    background-image: url("../img/client2.jpg");
-    width: 200px;
-    /*-webkit-clip-path: circle(165px at center);*/
+    background-image: url("../img/person/黄亚东.png");
+    width: 140px;
   }
   .cd-service.cd-service-3::before {
-    /*background-image: url("../img/cd-icon-3-large.svg");*/
-    background-image: url("../img/client2.jpg");
-    width: 200px;
-    /*-webkit-clip-path: circle(165px at center);*/
+    /*background-image: url("../img/cd-pattern-large.svg");*/
+    background-image: url("../img/person/me.png");
+    width: 140px;
   }
   .cd-service.cd-service-4::before {
-    /*background-image: url("../img/cd-icon-4-large.svg");*/
-    background-image: url("../img/client2.jpg");
-    width: 200px;
-    /*-webkit-clip-path: circle(165px at center);*/
+    background-image: url("../img/person/于超.png");
+    width: 140px;
   }
   .cd-service h2, .cd-service p {
     color: #71495b;
@@ -234,7 +233,7 @@ header h1 {
     transition: color, 0.5s;
   }
   .cd-service h2 {
-    margin-top: -70px;
+    margin-top: -200px;
     font-size: 30px;
     font-size: 1.875rem;
   }
@@ -254,6 +253,6 @@ header h1 {
 footer {
   position: relative;
   height: 50%;
-  background: #3e253c;
+  background: #3ca2e0;
   z-index: 2;
 }
