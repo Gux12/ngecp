@@ -52,7 +52,7 @@ $(document).ready(function() {
         }   
     }
     $('.cloth-disp-origin').hover(function() {
-        $(this).append('<div class="cloth-disp-origin-cover"><button class="button button-caution button-circle button-small button-like" style="margin: auto 10px 10px 10px"><i class="fa fa-heart" style="color: white"></i></button><button class="button button-primary button-pill button-small button-try" style="margin: auto 10px 10px 10px">试试看？</button><button class="button button-circle button-small button-dislike" style="margin: auto 10px 10px 10px"><i class="fa fa-times" style="color: white"></i></button></div>');
+        $(this).append('<div class="cloth-disp-origin-cover"><button class="button button-caution button-circle button-small button-like" style="margin: auto 10px 10px 10px"><i class="fa fa-heart" style="color: white"></i></button><button class="button button-primary button-pill button-small button-try" style="margin: auto 10px 10px 10px">试穿看看？</button><button class="button button-circle button-small button-dislike" style="margin: auto 10px 10px 10px"><i class="fa fa-times" style="color: white"></i></button></div>');
         var X = $(this).position().top;
         var Y = $(this).position().left;
         $('.cloth-disp-origin-cover').css({
@@ -81,4 +81,13 @@ $(document).ready(function() {
     $('.cloth-disp-origin').click(function(event) {
         $(this).parent().children('a').trigger('click');
     });
+
+    // 这部分是动态供应链的页面smart_chain.html相关的代码
+    animateAllChain(1);
+    function animateAllChain(pos) {
+        $('#smart-chain' + pos).show();
+        if ($('#smart-chain'+pos).length) {
+           $('#smart-chain' + pos).animo({ animation: 'rubberBand', duration: 1 ,timing: "easy-in"}, function(){animateAllChain(pos + 1);});
+        }
+    }
 });
