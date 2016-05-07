@@ -51,15 +51,16 @@ html, body {
 
 @media only screen and (min-width: 300px) {
   body.new-color-1::before {
-    background-color: #c06c69;
+    background-color: #335f9e;
   }
 
   body.new-color-2::before {
-    background-color: #bf69c0;
+    /*background-color: #bf69c0;*/
+    background-color: #308242;
   }
 
   body.new-color-3::before {
-    background-color: #699ec0;
+    background-color: #06a65e;
   }
 }
 body::before, body::after {
@@ -83,8 +84,8 @@ body::before, body::after {
 body::before {
   top: 0;
   /*-webkit-clip-path: circle(165px at center);*/
-  /*background-color: #f4bd89;*/
-  background-color: #3ca2e0;
+  background-color: #618ac8;
+  /*background-color: #3ca2e0;*/
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   transition: all 0.8s;
@@ -92,7 +93,7 @@ body::before {
 
 body::after {
   top: 50%;
-  background-color: #71495b;
+  background-color: #618ac8;
 }
 
 header {
