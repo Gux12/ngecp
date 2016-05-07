@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    // 这个是index.html相关的代码
+
+
     // 获取窗口宽度，高度
     winWidth = window.innerWidth;
     winHeight = window.innerHeight;
@@ -35,7 +38,17 @@ $(document).ready(function() {
     $('#hello2').animo({ animation: 'fadeInRight', duration: 3, delay: 0.5 });
     $('#hello-input').animo({ animation: 'fadeInUp', duration: 3, delay: 1 });
 
+
+
+
+    // 这部分是搜索以后服装展示的页面desire_cloth_style_display.html相关的代码
     // $('.lightbox-item').each(function(index, el) {
     //  $(this).css('height', $(this).width());
     // });
+    findAllCloth(1);
+    function findAllCloth(pos) {
+        if ($('#cloth-disp'+pos).length) {
+           $('#cloth-disp' + pos).animo({ animation: 'fadeInUp', duration: 0.5 ,delay: 0.1*(pos-1)}, findAllCloth(pos + 1));
+        }   
+    }
 });
