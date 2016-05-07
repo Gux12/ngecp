@@ -78,7 +78,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的需求<span class="caret"></span></a>
                         <ul class="dropdown-menu" style="text-align: center;">
                             <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车</a></li>
@@ -93,7 +93,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">南艺璇 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">个人中心</a></li>
+                            <li><a href="my.html">个人中心</a></li>
                             <li><a href="#">我的消息</a></li>
                             <li><a href="#">设置</a></li>
                             <li role="separator" class="divider"></li>
@@ -108,11 +108,11 @@
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="container col-md-12 col-xs-12 col-sm-12" style="text-align: center;margin-top: 15%;">
-        <h1  id='hello1'>嗨，艺璇</h1>
-        <h4  id='hello2'>我能为你做点什么？</h4>
+        <h1 id='hello1'>嗨,艺璇</h1>
+        <h4 id='hello2'>我能为你做点什么？</h4>
     </div>
     <div class="input-group col-md-8 col-xs-8 col-sm-8 col-md-offset-2 col-xs-offset-2 col-sm-offset-2" style="text-align: center;margin-top: 31%" id='hello-input'>
-        <input type="text" class="form-control form-no-border" placeholder="试试看“送一套西装到我家”">
+        <input id='whatINeed' type="text" class="form-control form-no-border" placeholder="试试看“送一套西装到我家”">
         <div class="input-group-addon"><i class="fa fa-microphone" aria-hidden="true" style="cursor: pointer;"></i></div>
     </div>
     <!-- /container -->
@@ -121,6 +121,21 @@
     <script src="js/vendor/animo.min.js"></script>
     <script src="js/vendor/flat-ui.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    $('#whatINeed').keydown(function(event) {
+        /* Act on the event */
+        if (event.keyCode == 13) {
+            var patt_cloth=[new RegExp("衣"),new RegExp("服"),new RegExp("装"),new RegExp("西服"),new RegExp("西装"),new RegExp("恤"),new RegExp("衫"),new RegExp("裤")];
+            for (var i = patt_cloth.length - 1; i >= 0; i--) {
+                if(patt_cloth[i].test($(this).val()))window.location.href = 'desire_cloth_style_display.html';
+            }
+            var patt_car=[new RegExp("车"),new RegExp("奥迪"),new RegExp("宝马"),new RegExp("奔驰"),new RegExp("现代"),new RegExp("北汽"),new RegExp("兰博基尼")];
+            for (var i = patt_car.length - 1; i >= 0; i--) {
+                if(patt_car[i].test($(this).val()))window.location.href = 'desire_car_style_display.html';
+            }
+        }
+    });
+    </script>
 </body>
 
 </html>
