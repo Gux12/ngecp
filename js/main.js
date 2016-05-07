@@ -48,7 +48,7 @@ $(document).ready(function() {
     findAllCloth(1);
     function findAllCloth(pos) {
         if ($('#cloth-disp'+pos).length) {
-           $('#cloth-disp' + pos).animo({ animation: 'fadeInUp', duration: 0.5 ,delay: 0.1*(pos-1)}, findAllCloth(pos + 1));
+           $('#cloth-disp' + pos).animo({ animation: 'fadeInUp', duration: 0.5 ,delay: 0.1*(pos-1),timing: "easy-in"}, findAllCloth(pos + 1));
         }   
     }
 });

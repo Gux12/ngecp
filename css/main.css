@@ -2,10 +2,9 @@
    Author's custom styles
    ========================================================================== */
 
-
 * {
     color: rgba(255, 255, 255, 1);
-    font-family:'楷体';
+    /*    font-family:'楷体';*/
 }
 
 i {
@@ -15,42 +14,43 @@ i {
 i:hover {
     color: #3ca2e0;
 }
+
 .navbar-mynavbar {
     background-color: #3ca2e0;
-    border-color: rgba(255,255,255,0.2);
+    border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.12);
     border-radius: 0px;
 }
 
 .navbar-mynavbar .navbar-brand {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .navbar-mynavbar .navbar-brand:hover,
 .navbar-mynavbar .navbar-brand:focus {
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     background-color: transparent;
 }
 
 .navbar-mynavbar .navbar-text {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .navbar-mynavbar .navbar-nav > li > a {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .navbar-mynavbar .navbar-nav > li > a:hover,
 .navbar-mynavbar .navbar-nav > li > a:focus {
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     background-color: transparent;
 }
 
 .navbar-mynavbar .navbar-nav > .active > a,
 .navbar-mynavbar .navbar-nav > .active > a:hover,
 .navbar-mynavbar .navbar-nav > .active > a:focus {
-    color: rgba(255,255,255,0.9);
-    background-color: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-mynavbar .navbar-nav > .disabled > a,
@@ -75,30 +75,30 @@ i:hover {
 
 .navbar-mynavbar .navbar-collapse,
 .navbar-mynavbar .navbar-form {
-    border-color: rgba(255,255,255,0.2);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-mynavbar .navbar-nav > .open > a,
 .navbar-mynavbar .navbar-nav > .open > a:hover,
 .navbar-mynavbar .navbar-nav > .open > a:focus {
-    color: rgba(255,255,255,0.9);
-    background-color: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 767px) {
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > li > a {
-        color: rgba(255,255,255,0.6);
+        color: rgba(255, 255, 255, 0.6);
     }
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 1);
         background-color: transparent;
     }
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: rgba(255,255,255,0.9);
-        background-color: rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 1);
     }
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > .disabled > a,
     .navbar-mynavbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -109,20 +109,20 @@ i:hover {
 }
 
 .navbar-mynavbar .navbar-link {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .navbar-mynavbar .navbar-link:hover {
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .navbar-mynavbar .btn-link {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .navbar-mynavbar .btn-link:hover,
 .navbar-mynavbar .btn-link:focus {
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .navbar-mynavbar .btn-link[disabled]:hover,
@@ -132,29 +132,31 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
     color: #ccc;
 }
 
-.navbar-mynavbar{
-	opacity: 0;
-	transition: opacity 1s;
+.navbar-mynavbar {
+    opacity: 0;
+    transition: opacity 1s;
 }
 
-.navbar-mynavbar:hover{
-	opacity: 1;
+.navbar-mynavbar:hover {
+    opacity: 1;
 }
 
-.dropdown-menu{
-	background-color: rgba(255,255,255,1);
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 1);
 }
+
+
 /*.dropdown-menu > li > a:hover
 .dropdown-menu > li > a:focus{
-	background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.8);
 }*/
 
-.dropdown-menu-inverse{
-    background-color: rgba(60,162,224,0.9);
+.dropdown-menu-inverse {
+    background-color: rgba(60, 162, 224, 0.9);
 }
 
-.dropdown-menu-inverse > li > a, 
-.dropdown-menu-inverse > li > a > i{
+.dropdown-menu-inverse > li > a,
+.dropdown-menu-inverse > li > a > i {
     color: #fff;
 }
 
@@ -183,5 +185,26 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
     border-radius: 6px;
 }
 
-.lightbox-item{
+.checkbox input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
+.radio input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
+.checkbox input[type="radio"].custom-radio:checked + .icons .icon-checked,
+.radio input[type="radio"].custom-radio:checked + .icons .icon-checked {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+    color: #3ca2e0;
 }
+
+.ui-slider-range {
+    background-color: #3ca2e0;
+}
+
+.ui-slider-handle,
+.ui-slider-handle:focus {
+    background-color: #3ca2e0;
+}
+.ui-slider-handle:hover {
+    background-color: #4cb2f0;
+}
+
+.lightbox-item {}
