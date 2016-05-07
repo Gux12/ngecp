@@ -29,7 +29,7 @@ Modules - reusable parts of our design
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
-  max-width: 1170px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -48,7 +48,7 @@ html, body {
   height: 100%;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 900px) {
   body.new-color-1::before {
     background-color: #c06c69;
   }
@@ -67,7 +67,7 @@ body::before, body::after {
   position: fixed;
   /* trick to remove some annoying flickering on webkit browsers */
   width: 89.8%;
-  max-width: 1170px;
+  max-width: 900px;
   left: 50%;
   right: auto;
   -webkit-transform: translateX(-50%);
@@ -111,7 +111,7 @@ header h1 {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   width: 90%;
-  max-width: 1170px;
+  max-width: 900px;
   text-align: center;
   color: #699ec0;
   font-size: 26px;
@@ -122,14 +122,14 @@ header h1 {
   position: relative;
   z-index: 2;
   min-height: 50px;
-  margin-left: 56px;
+  margin-left: 156px;
   background-color: #3e253c;
   padding: 1em 1em 4em;
 }
 .cd-service::before, .cd-service::after {
   content: '';
   position: absolute;
-  width: 56px;
+  width: 156px;
   right: 100%;
   z-index: 2;
 }
@@ -142,6 +142,7 @@ header h1 {
   top: 50px;
   bottom: 0;
   background-image: url("../img/cd-pattern-small.svg");
+  margin-left: 100px;
   background-repeat: repeat-y;
 }
 .cd-service.cd-service-divider::after {
@@ -175,10 +176,10 @@ header h1 {
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.5);
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 900px) {
   .cd-service {
     min-height: 525px;
-    margin-left: 420px;
+    margin-left: 620px;
     padding: 6em 2em;
   }
   .cd-service::before, .cd-service::after {
@@ -200,7 +201,9 @@ header h1 {
   }
   .cd-service.cd-service-1::before {
     /*background-image: url("../img/cd-icon-1-large.svg");*/
+    /*background-image: url("../img/person/designer.jpg");*/
     background-image: url("../img/client.jpg");
+    /*width: 200px;*/
     /*-webkit-clip-path: circle(165px at center);*/
   }
   .cd-service.cd-service-2::before {
