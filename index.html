@@ -83,7 +83,7 @@
                         <ul class="dropdown-menu" style="text-align: center;">
                             <!--<li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车</a></li>-->
                             <li><a href="demand_forecast.html"><i class="fa fa-bullseye" aria-hidden="true"></i> 预测需求</a></li>
-                            <li><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 周期需求</a></li>
+                            <li><a href="demand_period.html"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 周期需求</a></li>
                         </ul>
                     </li>
                     <li><a href="my_supply.html">我的供给</a></li>
@@ -144,7 +144,7 @@
                     result.diyKey = diy;
                     result.diyGoods = "服装";
                 } else if (diy = detectCar(desireText)) {
-                    result.diy = "不可定制";
+                    result.diy = "可定制";
                     result.diyKey = diy;
                     result.diyGoods = "汽车";
                 } else if (diy = detectSheep(desireText)) {
@@ -251,7 +251,7 @@
                 animateAllH3(1, function() {
                     $('#indexPanel').append('<br><a id="enter" class="button button-glow button-rounded button-jumbo button-highlight hide">进入选购</a>');
                     $('#enter').removeClass('hide');
-                    $('#enter')[0].href = "desire_car_style_display.html";
+                    $('#enter')[0].href = "desire_car_display.html";
                     $('#enter').focus();
                 });
             if (result.diyGoods == "羊肉")
