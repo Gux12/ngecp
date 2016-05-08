@@ -253,4 +253,6 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
 
 .smart-chain {
     display: none;
+    height: 400px;
+    width: 600px;
 }
