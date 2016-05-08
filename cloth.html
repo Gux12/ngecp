@@ -187,7 +187,7 @@ $(document).ready(function() {
         range: "min"
     });
     $("#slider1").slider({
-        value: 70
+        value: 70,
     });
     $("#slider2").slider({
         value: 30
@@ -210,13 +210,10 @@ $(document).ready(function() {
     //        $(".ui-slider").css('background-color','white');
     $(".ui-slider-range").css('background-color', '#3ca2e0');
     $(".ui-slider-handle").css('background-color', '#3489bf');
-    $(".change-size-btn").click(function() {
-        if ($(this).css("width") == "45px") {
-            $(this).css("width", "40px");
-        } else {
-            $(".change-size-btn").css("width", "40px");
-            $(this).css("width", "45px");
-        }
+    $(".change-size-btn").hover(function() {
+        $(this).css("width", "45px");
+    },function(){
+        $(this).css("width", "40px");
     });
 });
 </script>

@@ -27,119 +27,115 @@
     <link rel="stylesheet" href="css/semantic.min.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <style>
-        .icon-unchecked {
-            color: darkgray;
-            font-family: '楷体';
-        }
-
-        .icon-checked {
-            color: darkgray;
-            font-family: '楷体';
-        }
-        div {
-            color: rgba(255, 255, 255, 1);
-            font-family: 'STHeiti';
-        }
+    .icon-unchecked {
+        color: darkgray;
+        font-family: '楷体';
+    }
+    
+    .icon-checked {
+        color: darkgray;
+        font-family: '楷体';
+    }
+    
+    div {
+        color: rgba(255, 255, 255, 1);
+        font-family: 'STHeiti';
+    }
     </style>
-
 </head>
-
 <!--<body style="background-image: url(img/myspace/bg_md_blue3.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">-->
+
 <body style="background-color: #3ca2e0">
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<nav class="navbar navbar-mynavbar">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Buy+</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">我的需求<span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-inverse" style="text-align: center;">
-                        <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车</a></li>
-                        <li><a href="#"><i class="fa fa-bullseye" aria-hidden="true"></i> 预测需求</a></li>
-                        <li><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 周期需求</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">我的供给</a></li>
-                <li><a href="#">我的空间</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">南艺璇<span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-inverse">
-                        <li><a href="#">个人中心</a></li>
-                        <li><a href="#">我的消息</a></li>
-                        <li><a href="#">设置</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">退出登录</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" class="form-control form-no-border" placeholder="我好想搜点什么">
-                        <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"
-                                                          style="cursor: pointer;"></i></div>
+    <nav class="navbar navbar-mynavbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Buy+</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的需求<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="text-align: center;">
+                            <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车</a></li>
+                            <li><a href="#"><i class="fa fa-bullseye" aria-hidden="true"></i> 预测需求</a></li>
+                            <li><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 周期需求</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">我的供给</a></li>
+                    <li><a href="#">我的空间</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">南艺璇<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">我的消息</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-no-border" placeholder="我好想搜点什么">
+                            <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true" style="cursor: pointer;"></i></div>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.navbar-collapse -->
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container-fluid">
+        <div class="gux-font-adjust" data-fontsize=60 style="text-align: center;margin-top: 80px;">我的空间</div>
+        <p class="gux-font-adjust" data-fontsize=30 style="text-align: center;margin-top: 40px;">在这里 , 我们打开窗口 , 联系世界</p>
+        <div class="container col-md-10 col-md-offset-1" style="text-align: center;margin-top: 60px;">
+            <div class="col-md-3">
+                <!--<img src="img/myspace/1.png" style="-webkit-clip-path: circle(120px at center);">-->
+                <a href="chat.html"><img src="img/myspace/friend4.jpg" style="width: 80%;-webkit-clip-path: circle(50% at 50% 50%);"></a>
+                <h1 class="row gux-font-adjust" data-fontsize=30 style="text-align: center;margin-top: 30px;">朋友圈</h1>
+                <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看我的朋友们最近都发生了哪些新鲜事</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/myspace/client.jpg" style="width: 80%;-webkit-clip-path: circle(50% at 50% 50%);">
+                <h1 class="row gux-font-adjust" data-fontsize=30 style="text-align: center;margin-top: 30px;">客户</h1>
+                <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看我的客户是否有新的需求</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/myspace/supply.jpg" style="width: 80%;-webkit-clip-path: circle(50% at 50% 50%);">
+                <h1 class="row gux-font-adjust" data-fontsize=30 style="text-align: center;margin-top: 30px;">供应商</h1>
+                <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看我的订单动态</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/myspace/LoversGazeREX_468x304.jpg" style="width: 80%;-webkit-clip-path: circle(50% at 50% 50%);">
+                <h1 class="row gux-font-adjust" data-fontsize=30 style="text-align: center;margin-top: 30px;">关注</h1>
+                <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看最近出现了什么最新的产品和服务</p>
+            </div>
+        </div>
     </div>
-    <!-- /.container-fluid -->
-</nav>
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div style="text-align: center;font-size: 40px;margin-top: 80px;">我的空间</div>
-<p style="text-align: center;font-size: 15px;margin-top: 20px;">在这里 , 我们打开窗口 , 联系世界</p>
-<div>
-    <div class="container col-md-10 col-md-offset-1" style="text-align: center;margin-top: 60px;">
-        <div class="col-md-3">
-            <!--<img src="img/myspace/1.png" style="-webkit-clip-path: circle(120px at center);">-->
-            <a href="chat.html"><img src="img/myspace/friend4.jpg" style="width: 200px;-webkit-clip-path: circle(100px at center);"></a>
-            <div class="row" style="text-align: center;font-size: 30px;margin-top: 30px;">朋友圈</div>
-            <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看我的朋友们最近都发生了哪些新鲜事</p>
-        </div>
-        <div class="col-md-3">
-            <img src="img/myspace/client.jpg" style="width: 200px;-webkit-clip-path: circle(100px at center);">
-            <div class="row" style="text-align: center;font-size: 30px;margin-top: 30px;">客户</div>
-            <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看我的客户是否有新的需求</p>
-        </div>
-        <div class="col-md-3">
-            <img src="img/myspace/supply.jpg" style="width: 200px;-webkit-clip-path: circle(100px at center);">
-            <div class="row" style="text-align: center;font-size: 30px;margin-top: 30px;">供应商</div>
-            <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看我的订单动态</p>
-        </div>
-        <div class="col-md-3">
-            <img src="img/myspace/LoversGazeREX_468x304.jpg" style="width: 200px;-webkit-clip-path: circle(100px at center);">
-            <div class="row" style="text-align: center;font-size: 30px;margin-top: 30px;">关注</div>
-            <p style="text-align: center;font-size: 15px;margin-top: 15px;">看看最近出现了什么最新的产品和服务</p>
-        </div>
-    </div>
-</div>
-<script src="js/vendor/jquery-1.11.2.min.js"></script>
-<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
-<script src="js/vendor/animo.min.js"></script>
-<script src="js/vendor/flat-ui.js"></script>
-<script src="js/vendor/lightbox.js"></script>
-<script src="js/vendor/semantic.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
+    <script src="js/vendor/animo.min.js"></script>
+    <script src="js/vendor/flat-ui.js"></script>
+    <script src="js/vendor/lightbox.js"></script>
+    <script src="js/vendor/semantic.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

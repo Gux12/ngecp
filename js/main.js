@@ -1,10 +1,14 @@
 $(document).ready(function() {
     // 这个是index.html相关的代码
-
-
     // 获取窗口宽度，高度
     winWidth = window.innerWidth;
     winHeight = window.innerHeight;
+    function fontAdjust(obj, fontsize) {
+        obj.css('font-size', winWidth / 1920 * fontsize);
+    }
+    $('.gux-font-adjust').each(function(index, el) {
+        $(this).css('font-size', fontAdjust($(this),this.dataset.fontsize));
+    });
     $('body').css('height', winHeight);
     $('body').css('width', winWidth);
     $('#hello1').css('font-size', winWidth / 1920 * 88);
@@ -34,6 +38,9 @@ $(document).ready(function() {
     //     };
     // }
     // 
+    $('#hello1').removeClass('hide');
+    $('#hello2').removeClass('hide');
+    $('#hello-input').removeClass('hide');
     $('#hello1').animo({ animation: 'fadeInLeft', duration: 3 });
     $('#hello2').animo({ animation: 'fadeInRight', duration: 3, delay: 0.5 });
     $('#hello-input').animo({ animation: 'fadeInUp', duration: 3, delay: 1 });
@@ -46,10 +53,11 @@ $(document).ready(function() {
     //  $(this).css('height', $(this).width());
     // });
     findAllCloth(1);
+
     function findAllCloth(pos) {
-        if ($('#cloth-disp'+pos).length) {
-           $('#cloth-disp' + pos).animo({ animation: 'fadeInUp', duration: 0.5 ,delay: 0.1*(pos-1),timing: "easy-in"}, findAllCloth(pos + 1));
-        }   
+        if ($('#cloth-disp' + pos).length) {
+            $('#cloth-disp' + pos).animo({ animation: 'fadeInUp', duration: 0.5, delay: 0.1 * (pos - 1), timing: "easy-in" }, findAllCloth(pos + 1));
+        }
     }
     $('.cloth-disp-origin').hover(function() {
         $(this).append('<div class="cloth-disp-origin-cover"><button class="button button-caution button-circle button-small button-like" style="margin: auto 10px 10px 10px"><i class="fa fa-heart" style="color: white"></i></button><button class="button button-primary button-pill button-small button-try" style="margin: auto 10px 10px 10px">试穿看看？</button><button class="button button-circle button-small button-dislike" style="margin: auto 10px 10px 10px"><i class="fa fa-times" style="color: white"></i></button></div>');
@@ -60,7 +68,7 @@ $(document).ready(function() {
             'left': Y,
             'height': $(this).height(),
             'width': $(this).width(),
-            'padding-top': $(this).height()-50,
+            'padding-top': $(this).height() - 50,
         })
         $('.button-like').click(function(event) {
             /* Act on the event */
@@ -84,10 +92,11 @@ $(document).ready(function() {
 
     // 这部分是动态供应链的页面smart_chain.html相关的代码
     animateAllChain(1);
+
     function animateAllChain(pos) {
         $('#smart-chain' + pos).show();
-        if ($('#smart-chain'+pos).length) {
-           $('#smart-chain' + pos).animo({ animation: 'rubberBand', duration: 1 ,timing: "easy-in"}, function(){animateAllChain(pos + 1);});
+        if ($('#smart-chain' + pos).length) {
+            $('#smart-chain' + pos).animo({ animation: 'rubberBand', duration: 1, timing: "easy-in" }, function() { animateAllChain(pos + 1); });
         }
     }
 });
