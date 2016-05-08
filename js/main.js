@@ -3,11 +3,12 @@ $(document).ready(function() {
     // 获取窗口宽度，高度
     winWidth = window.innerWidth;
     winHeight = window.innerHeight;
+
     function fontAdjust(obj, fontsize) {
         obj.css('font-size', winWidth / 1920 * fontsize);
     }
     $('.gux-font-adjust').each(function(index, el) {
-        $(this).css('font-size', fontAdjust($(this),this.dataset.fontsize));
+        $(this).css('font-size', fontAdjust($(this), this.dataset.fontsize));
     });
     $('body').css('height', winHeight);
     $('body').css('width', winWidth);
@@ -90,13 +91,31 @@ $(document).ready(function() {
         $(this).parent().children('a').trigger('click');
     });
 
-    // 这部分是动态供应链的页面smart_chain.html相关的代码
-    animateAllChain(1);
 
-    function animateAllChain(pos) {
-        $('#smart-chain' + pos).show();
-        if ($('#smart-chain' + pos).length) {
-            $('#smart-chain' + pos).animo({ animation: 'rubberBand', duration: 1, timing: "easy-in" }, function() { animateAllChain(pos + 1); });
+
+    //guxblock-move可拖动
+
+    mousePosX = 0;
+    mousePosY = 0;
+    isMouseDown = false;
+    $(document).mousemove(function(event) {
+        /* Act on the event */
+        if (isMouseDown && event.which == 1) {
+            $NowElement.css('left', event.pageX - $NowElement.parent().offset().left - mousePosX - parseInt($NowElement.parent().css('padding-left')));
+            $NowElement.css('top', event.pageY - $NowElement.parent().offset().top - mousePosY);
+        } else {
+
         }
-    }
+    });
+    $(".guxblock-move").mousedown(function(event) {
+        if (event.which == 1) {
+            isMouseDown = !isMouseDown;
+            $NowElement = $(this);
+            mousePosX = event.pageX - $NowElement.offset().left;
+            mousePosY = event.pageY - $NowElement.offset().top;
+        }
+    });
+    $(".guxblock-move").mouseup(function(event) {
+        isMouseDown = !isMouseDown;
+    });
 });

@@ -21,7 +21,7 @@ i:hover {
 }
 
 nav {
-    z-index: 1000;
+    z-index: 2000;
 }
 
 .navbar-mynavbar {
@@ -244,15 +244,33 @@ fieldset[disabled] .navbar-mynavbar .btn-link:focus {
 }
 
 
-.guxblock {
+.guxblock-move {
+    position: relative;
     padding: 20px;
     border-radius: 6px;
     background-color: rgba(255,255,255,0.9);
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px 0;
+    color: #606d7a;
+    z-index: 1000;
+}
+
+.guxblock {
+    position: relative;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px 0;
+    color: #606d7a;
+    z-index: 1000;
+    width: 100%;
+}
+.chart{
+    width: 100%;
+}
+.font-gray {
+    color: #606d7a;
 }
 
 .smart-chain {
     display: none;
-    height: 400px;
-    width: 600px;
 }
