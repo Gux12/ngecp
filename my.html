@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/buttons.min.css">
     <link rel="stylesheet" href="css/flat-ui.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -29,6 +30,14 @@
             /*color: #cacaca;*/
             font-weight: bold;
             font-size: 20px;
+        }
+        .shadow-box {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: rgba(255,255,255,1);
+            box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
+            overflow: hidden;
+            text-align: center;
         }
     </style>
 </head>
@@ -90,7 +99,7 @@
     </nav>
 
     <div class="container-fluid" style="margin-top: 10px;">
-        <div class="col-md-4 col-md-offset-1" style="overflow: hidden;">
+        <div class="col-md-4 col-md-offset-1 shadow-box">
             <img src="img/cloth/TS10L20JIND_3col_F_1.jpg" style="width: 500px;margin-top: 20px;">
         </div>
 
@@ -245,6 +254,7 @@
 <script src="js/vendor/animo.min.js"></script>
 <script src="js/vendor/flat-ui.js"></script>
 <script src="js/vendor/semantic.min.js"></script>
+<script src="js/vendor/lightbox.js"></script>
 <script src="js/main.js"></script>
 <script>
 //    $("td").css("text-align", "center");
