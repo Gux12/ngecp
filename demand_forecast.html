@@ -17,9 +17,9 @@
     <meta name="viewport" content="width=device-width">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/animate-animo.min.css">
-    <link rel="stylesheet" href="css/buttons.min.css">
+    <!--<link rel="stylesheet" href="css/animate.css">-->
+    <!--<link rel="stylesheet" href="css/animate-animo.min.css">-->
+    <!--<link rel="stylesheet" href="css/buttons.min.css">-->
     <link rel="stylesheet" href="css/flat-ui.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <!--<link rel="stylesheet" href="css/lightbox.css">-->
@@ -28,12 +28,13 @@
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/slidenav.min.css">
     <link rel="stylesheet" href="css/slider.min.css">
+    <!--<link rel="stylesheet" href="css/material.min.css">-->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <style>
         .shadow-box {
             padding: 20px;
             border-radius: 6px;
-            background-color: rgba(255,255,255,1);
+            background-color: rgba(255,255,255,0.9);
             box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
             overflow: hidden;
             text-align: center;
@@ -47,10 +48,30 @@
         td {
             color: black;
         }
-        .fui-star-2 {
+        .p-title {
             color: orangered;
+            font-size: 30px;
         }
-
+        p {
+            color: black;
+        }
+        li {
+            padding-left: 0px;
+            padding-right: 80px;
+            margin: 0px;
+        }
+        .icon-checked {
+            color: darkgray;
+        }
+        .icon-unchecked {
+            color: darkgray;
+        }
+        .checkbox {
+            /*margin-left: 25px;*/
+            margin-bottom: 15px;
+            margin-top: 0px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -123,70 +144,416 @@
 
     <div class="uk-slider-container" style="margin-top: 80px;">
         <ul class="uk-slider uk-grid-width-medium-1-2">
-            <!--<li style="padding-left: 140px;padding-right: 100px;">-->
             <li class="li-1">
                 <div class="shadow-box" style="height: 500px;">
-                    日常易耗
+                    <p class="p-title">日常易耗</p>
                     <table class="ui orange table" align="center">
                         <thead>
-                        <tr><th>材质成分1</th>
-                            <th>棉95% 聚氨酯弹性纤维</th>
-                        </tr></thead>
+                        <tr>
+                            <th rowspan="2">ID</th>
+                            <th rowspan="2">配件</th>
+                            <th rowspan="2">进货时间</th>
+                            <th rowspan="2">预计耗尽日期</th>
+                            <th rowspan="2">持续时间</th>
+                            <th colspan="3">2016年2月</th>
+                            <th colspan="8">2016年3月</th>
+                            <th rowspan="2">购买</th>
+                            <th rowspan="2">提醒</th>
+                        </tr>
+                        <tr>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                        </tr>
+                        </thead>
                         <tbody>
-                        <tr>
-                            <td>货号</td>
-                            <td>6168N</td>
-                        </tr>
-                        <tr>
-                            <td>流行元素</td>
-                            <td>涂鸦</td>
-                        </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>食用油</td>
+                                <td>2016/1/1</td>
+                                <td>2016/3/1</td>
+                                <td>61</td>
+                                <td colspan="11">
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 40%;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox11" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox11" data-toggle="checkbox" class="custom-checkbox">
+                                        <span class="icons">
+                                        <span class="icon-unchecked"></span>
+                                        <span class="icon-checked"></span>
+                                        </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox12" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox12" data-toggle="checkbox" class="custom-checkbox">
+                                        <span class="icons">
+                                        <span class="icon-unchecked"></span>
+                                        <span class="icon-checked"></span>
+                                        </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>大葱</td>
+                                <td>2016/2/25</td>
+                                <td>2016/3/3</td>
+                                <td>8</td>
+                                <td colspan="11">
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 60%;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox13" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox13" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox14" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox14" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>鸡蛋</td>
+                                <td>2016/2/20</td>
+                                <td>2016/3/10</td>
+                                <td>20</td>
+                                <td colspan="11">
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox15" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox15" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox16" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox16" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>洗洁精</td>
+                                <td>2016/2/1</td>
+                                <td>2016/3/6</td>
+                                <td>35</td>
+                                <td colspan="11">
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox17" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox17" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox18" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox18" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>5号电池</td>
+                                <td>2016/1/5</td>
+                                <td>2016/3/20</td>
+                                <td>76</td>
+                                <td colspan="11">
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox19" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox19" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox20" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox20" data-toggle="checkbox" class="custom-checkbox">
+                                    <span class="icons">
+                                    <span class="icon-unchecked"></span>
+                                    <span class="icon-checked"></span>
+                                    </span>
+                                    </label>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
+                    <p><button class="ui inverted orange button">确认</button></p>
                 </div>
             </li>
-            <!--<li style="padding-left: 150px;padding-right: 150px;">-->
             <li class="li-2">
                 <div class="shadow-box" style="height: 500px;">
-                    潮流换季
-                    <table class="ui orange table" align="center">
-                        <thead>
-                        <tr><th>材质成分2</th>
-                            <th>棉95% 聚氨酯弹性纤维</th>
-                        </tr></thead>
-                        <tbody>
-                        <tr>
-                            <td>货号</td>
-                            <td>6168N</td>
-                        </tr>
-                        <tr>
-                            <td>流行元素</td>
-                            <td>涂鸦</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <p class="p-title">潮流换季</p>
+                    <div class="ui three column very relaxed grid">
+                        <div class="column">
+                            <p>当季参数</p>
+                            <button class="ui teal button" style="margin-top: 25px;">当前季节 : 初夏</button>
+                            <button class="ui teal button" style="margin-top: 25px;">穿衣指数 : 短袖</button>
+                            <button class="ui teal button" style="margin-top: 25px;">流行元素 : 毕业</button>
+                            <button class="ui teal button" style="margin-top: 25px;">热点搭配 : 短裤</button>
+                            <button class="ui teal button" style="margin-top: 25px;">参考价格 : 100</button>
+                        </div>
+                        <div class="ui vertical divider" style="height: 40%"></div>
+                        <div class="column">
+                            <p>存货情况</p>
+                            <button class="ui teal button" style="margin-top: 25px;">短袖数量 : 3件</button>
+                            <button class="ui teal button" style="margin-top: 45px;">破损程度 : 中等</button>
+                            <button class="ui teal button" style="margin-top: 45px;">搭配情况 : 一般</button>
+                            <button class="ui teal button" style="margin-top: 45px;">是否过时 : 即将</button>
+                        </div>
+                        <div class="ui vertical divider" style="height: 40%"></div>
+                        <div class="column">
+                            <p>推荐结果</p>
+                            <button class="ui teal button" style="margin-top: 25px;">毕业T恤 : 2件</button>
+                            <button class="ui teal button" style="margin-top: 45px;">LALABOBO短裤 : 2条</button>
+                            <button class="ui inverted orange button" style="margin-top: 125px;">确认购买</button>
+                        </div>
+                    </div>
                 </div>
             </li>
-            <!--<li style="padding-left: 150px;padding-right: 150px;">-->
             <li class="li-3">
                 <div class="shadow-box" style="height: 500px;">
-                    使用到期
+                    <p class="p-title">使用到期</p>
                     <table class="ui orange table" align="center">
                         <thead>
-                        <tr><th>材质成分3</th>
-                            <th>棉95% 聚氨酯弹性纤维</th>
-                        </tr></thead>
+                            <tr>
+                                <th>已购商品</th>
+                                <th>购买日期</th>
+                                <th>使用情况</th>
+                                <th>平均报废情况</th>
+                                <th>剩余使用时长</th>
+                                <th>购买</th>
+                                <th>提醒</th>
+                            </tr>
+                        </thead>
                         <tbody>
-                        <tr>
-                            <td>货号</td>
-                            <td>6168N</td>
-                        </tr>
-                        <tr>
-                            <td>流行元素</td>
-                            <td>涂鸦</td>
-                        </tr>
+                            <tr>
+                                <td>汽车</td>
+                                <td>2011年</td>
+                                <td>20万公里</td>
+                                <td>50万公里</td>
+                                <td>7年</td>
+                                <td>
+                                    <label class="checkbox" for="checkbox31" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox31" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox32" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox32" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>冰箱</td>
+                                <td>2010年</td>
+                                <td>24小时</td>
+                                <td>10年</td>
+                                <td>4年</td>
+                                <td>
+                                    <label class="checkbox" for="checkbox33" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox33" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox34" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox34" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>电视</td>
+                                <td>2012年</td>
+                                <td>2小时/天</td>
+                                <td>8年</td>
+                                <td>4年</td>
+                                <td>
+                                    <label class="checkbox" for="checkbox35" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox35" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox36" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox36" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>空调</td>
+                                <td>2008年</td>
+                                <td>4月/年</td>
+                                <td>10年</td>
+                                <td>2年</td>
+                                <td>
+                                    <label class="checkbox" for="checkbox37" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox37" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox38" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox38" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>电动车</td>
+                                <td>2013年</td>
+                                <td>1小时/天</td>
+                                <td>2000小时</td>
+                                <td>3年</td>
+                                <td>
+                                    <label class="checkbox" for="checkbox39" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox39" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox40" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox40" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>笔记本</td>
+                                <td>2011年</td>
+                                <td>8小时/天</td>
+                                <td>10000小时</td>
+                                <td>建议更换</td>
+                                <td>
+                                    <label class="checkbox" for="checkbox41" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox41" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox42" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox42" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>饮水机</td>
+                                <td>2014年</td>
+                                <td>3小时/天</td>
+                                <td>4000小时</td>
+                                <td>2年</td>
+                                <td>
+                                    <label class="checkbox" for="checkbox43" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox43" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="checkbox" for="checkbox44" style="color: black;">
+                                        <input type="checkbox" value="" id="checkbox44" data-toggle="checkbox" class="custom-checkbox">
+                                            <span class="icons">
+                                            <span class="icon-unchecked"></span>
+                                            <span class="icon-checked"></span>
+                                            </span>
+                                    </label>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
+                    <p><button class="ui inverted orange button" style="margin-top: 10px;">确认</button></p>
                 </div>
             </li>
         </ul>
@@ -198,33 +565,39 @@
 </div>
 
 <script src="js/vendor/jquery-1.11.2.min.js"></script>
-<script src="js/vendor/semantic.min.js"></script>
-<script src="js/vendor/animo.min.js"></script>
+
+<!--<script src="js/vendor/animo.min.js"></script>-->
 <script src="js/vendor/flat-ui.js"></script>
 <!--<script src="js/vendor/lightbox.js"></script>-->
+<!--<script src="js/vendor/slideset.min.js"></script>-->
+
 <script src="js/vendor/uikit.min.js"></script>
-<script src="js/vendor/slideset.min.js"></script>
+
 <script src="js/vendor/slider.min.js"></script>
+<!--<script src="js/vendor/semantic.min.js"></script>-->
+<script src="js/vendor/material.min.js"></script>
 <script src="js/main.js"></script>
 <script>
     $(document).ready(function () {
-        $(".uk-slidenav-previous").css("margin-left", "-20px;");
-
         $("#btn-1").click(function () {
-            alert($(".li-1").hasClass('uk-active'));
-//            while ($("#li-1").attr('class')[0] == 'uk-slide-after') {
-//                $(".uk-slidenav-next").click();
-//                alert('test');
-//            }
-//            alert('test1');
-            while (true) {
-                if ($(".li-1").hasClass('uk-avtive')) {
-
-                    break;
-                }
-                else {
-                    $(".uk-slidenav-next").click();
-                }
+            if ($(".li-2").hasClass('uk-active').toString() == "true") {
+                $(".uk-slidenav-previous").click();
+            } else if ($(".li-3").hasClass('uk-active').toString() == "true") {
+                $(".uk-slidenav-next").click();
+            }
+        });
+        $("#btn-2").click(function () {
+            if ($(".li-3").hasClass('uk-active').toString() == "true") {
+                $(".uk-slidenav-previous").click();
+            } else if ($(".li-1").hasClass('uk-active').toString() == "true") {
+                $(".uk-slidenav-next").click();
+            }
+        });
+        $("#btn-3").click(function () {
+            if ($(".li-1").hasClass('uk-active').toString() == "true") {
+                $(".uk-slidenav-previous").click();
+            } else if ($(".li-2").hasClass('uk-active').toString() == "true") {
+                $(".uk-slidenav-next").click();
             }
         });
     });
