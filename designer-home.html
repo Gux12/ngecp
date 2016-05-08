@@ -73,27 +73,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Buy+</a>
+                <a class="navbar-brand" href="designer-home.html">Design+</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的需求<span class="caret"></span></a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的设计<span class="caret"></span></a>
                         <ul class="dropdown-menu" style="text-align: center;">
-                            <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i> 购物车</a></li>
-                            <li><a href="#"><i class="fa fa-bullseye" aria-hidden="true"></i> 预测需求</a></li>
-                            <li><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 周期需求</a></li>
+                            <li><a href="my_supply.html"><i class="fa fa-cart-plus" aria-hidden="true"></i> 发布设计</a></li>
+                            <li><a href="#"><i class="fa fa-bullseye" aria-hidden="true"></i> 设计列表</a></li>
+                            <li><a href="#"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 查看设计需求</a></li>
                         </ul>
                     </li>
-                    <li><a href="my_supply.html">我的供给</a></li>
+                    <li><a href="my_supply.html">我的需求</a></li>
                     <li><a href="my_space.html">我的空间</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">南艺璇 <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Citi <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="my.html">个人中心</a></li>
+                            <li><a href="desiner-my.html">个人中心</a></li>
                             <li><a href="#">我的消息</a></li>
                             <li><a href="#">设置</a></li>
                             <li role="separator" class="divider"></li>
@@ -109,11 +109,11 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="container-fluid">
         <div id="indexPanel" class="col-md-12 col-xs-12 col-sm-12" style="text-align: center;margin-top: 15%;">
-            <h1 id='hello1' class="hide">嗨,艺璇</h1>
-            <h4 id='hello2' class="hide">我能为你做点什么？</h4>
+            <h1 id='hello1' class="hide">嗨,Citi</h1>
+            <h4 id='hello2' class="hide">你要做点什么？</h4>
         </div>
         <div class="input-group col-md-8 col-xs-8 col-sm-8 col-md-offset-2 col-xs-offset-2 col-sm-offset-2 hide" style="text-align: center;margin-top: 31%" id='hello-input'>
-            <input id='whatINeed' type="text" class="form-control form-no-border" placeholder="试试看“送一套西装到我家”">
+            <input id='whatINeed' type="text" class="form-control form-no-border" placeholder="试试看“查看我能参与的设计”">
             <div class="input-group-addon"><i class="fa fa-microphone" aria-hidden="true" style="cursor: pointer;"></i></div>
         </div>
     </div>
@@ -140,11 +140,11 @@
                     'desireTypeKey': '',
                 };
                 if (diy = detectCloth(desireText)) {
-                    result.diy = "可定制";
+                    result.diy = "可参与设计";
                     result.diyKey = diy;
                     result.diyGoods = "服装";
                 } else if (diy = detectCar(desireText)) {
-                    result.diy = "不可定制";
+                    result.diy = "可购买";
                     result.diyKey = diy;
                     result.diyGoods = "汽车";
                 } else if (diy = detectSheep(desireText)) {
@@ -171,7 +171,7 @@
         });
 
         function detectCloth(string) {
-            var patt_cloth = [new RegExp("衣"), new RegExp("服"), new RegExp("装"), new RegExp("西服"), new RegExp("西装"), new RegExp("恤"), new RegExp("衫"), new RegExp("裤"), new RegExp("外套")];
+            var patt_cloth = [new RegExp("衣"), new RegExp("服"), new RegExp("装"), new RegExp("西服"), new RegExp("西装"), new RegExp("恤"), new RegExp("衫"), new RegExp("裤"), new RegExp("设计")];
             for (var i = patt_cloth.length - 1; i >= 0; i--)
                 if (patt_cloth[i].test(string)) return patt_cloth[i];
             return false;
@@ -242,7 +242,7 @@
                     $('#indexPanel').append('<h3 class="hide" id="h34">需求类型为<kbd>' + result.desireType + '需求</kbd></h3>');
                     $('#indexPanel').append('<h3 class="hide" id="h35">需求分析为<kbd>' + result.diy + result.desireType + '需求(ง •̀_•́)ง</kbd></h3>');
                 } else {
-                    $('#indexPanel').append('<h3 class="hide" id="h33">需求分析为<kbd>' + result.diy + '未知需求(ง •̀_•́)ง</kbd></h3>');
+                    $('#indexPanel').append('<h3 class="hide" id="h33">需求分析为 列出<kbd>' + result.diy + '的服装(ง •̀_•́)ง</kbd></h3>');
                 }
             } else {
                 $('#indexPanel').append('<h3 class="hide" id="h31">您需要的商品我们这儿没有( >﹏<。)</h3>');
@@ -254,18 +254,11 @@
                     $('#enter')[0].href = "desire_cloth_style_display.html";
                     $('#enter').focus();
                 });
-            if (result.diyGoods == "羊肉")
-                animateAllH3(1, function() {
-                    $('#indexPanel').append('<br><a id="enter" class="button button-glow button-rounded button-jumbo button-highlight hide">进入选购</a>');
-                    $('#enter').removeClass('hide');
-                    $('#enter')[0].href = "desire_cloth_style_display.html";
-                    $('#enter').focus();
-                });
             if (result.diyGoods == "服装")
                 animateAllH3(1, function() {
                     $('#indexPanel').append('<br><a id="enter" class="button button-glow button-rounded button-jumbo button-highlight hide">进入选购</a>');
                     $('#enter').removeClass('hide');
-                    $('#enter')[0].href = "desire_car_style_display.html";
+                    $('#enter')[0].href = "desire_cloth_style_display.html";
                     $('#enter').focus();
                 });
             if (result.diy == "none") {
