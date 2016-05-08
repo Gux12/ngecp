@@ -199,7 +199,7 @@ header h1 {
   }
   .cd-service::after {
     top: 200px;
-    background-image: url("../img/cd-pattern-large.svg");
+    /*background-image: url("../img/svg/cd-pattern-large.svg");*/
   }
   .cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
     margin-top: -100px;
@@ -213,16 +213,13 @@ header h1 {
   }
   .cd-service.cd-service-1::before {
     background-image: url("../img/person/designer.png");
-    /*background-image: url("../img/client2.jpg");*/
     width: 140px;
-    /*-webkit-clip-path: circle(165px at center);*/
   }
   .cd-service.cd-service-2::before {
     background-image: url("../img/person/黄亚东.png");
     width: 140px;
   }
   .cd-service.cd-service-3::before {
-    /*background-image: url("../img/cd-pattern-large.svg");*/
     background-image: url("../img/person/me.png");
     width: 140px;
   }

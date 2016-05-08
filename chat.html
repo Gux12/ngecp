@@ -29,6 +29,14 @@
         i {
             color: #3ca2e0;
         }
+        .shadow-box {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: rgba(255,255,255,0.9);
+            box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 0;
+            overflow: hidden;
+            text-align: center;
+        }
     </style>
 </head>
 <!--<body style="background-color: #3e253c">-->
@@ -81,33 +89,33 @@
 <!--<h1>Icons Filling Effect</h1>-->
 <!--</header>-->
 <div style="text-align: center;font-size: 40px;margin-left: -80px; margin-top: 50px;z-index: 10;position: relative;">我的朋友圈</div>
-<div style="position: absolute;margin-left: 150px;margin-top: 50px;width: 300px;">
-    <div class="input-group" style="text-align: center;margin-top: 20px;margin-left: 20px;width: 60%;" id='hello-input'>
+<div class="shadow-box" style="position: absolute;margin-left: 150px;margin-top: 50px;width: 300px;text-align: center;">
+    <div class="input-group" style="text-align: center;margin-top: 20px;margin-left: 50px;width: 60%;" id='hello-input'>
         <input id='whatINeed' type="text" class="form-control form-no-border" placeholder="搜索通讯录”">
         <div class="input-group-addon"><i class="fa fa-microphone" aria-hidden="true" style="cursor: pointer;"></i></div>
     </div>
-    <ul class="demo-list-icon mdl-list" style="margin-top: 20px;">
+    <ul class="demo-list-icon mdl-list" style="margin-top: 20px;margin-left: 40px;">
         <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
+            <span class="mdl-list__item-primary-content" style="color: black;">
                 <!--<i class="material-icons mdl-list__item-icon">person</i>-->
                 <img src="img/person/designer_h.png" style="margin-right: 30px;">
                 顾乡
             </span>
         </li>
         <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
+            <span class="mdl-list__item-primary-content" style="color: black;">
                 <img src="img/person/黄亚东_h.png" style="margin-right: 30px;">
                 黄亚东
             </span>
         </li>
         <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
+            <span class="mdl-list__item-primary-content" style="color: black;">
                 <img src="img/person/me_h.png" style="margin-right: 30px;">
                 南艺璇
             </span>
         </li>
         <li class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
+            <span class="mdl-list__item-primary-content" style="color: black;">
                 <img src="img/person/于超_h.png" style="margin-right: 30px;">
                 于超
             </span>
