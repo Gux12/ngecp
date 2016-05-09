@@ -241,9 +241,37 @@
                     $('#indexPanel').append('<h3 class="hide" id="h33">检测到关键字<kbd>' + result.desireTypeKey + '</kbd></h3>');
                     $('#indexPanel').append('<h3 class="hide" id="h34">需求类型为<kbd>' + result.desireType + '需求</kbd></h3>');
                     $('#indexPanel').append('<h3 class="hide" id="h35">需求分析为<kbd>' + result.diy + result.desireType + '需求(ง •̀_•́)ง</kbd></h3>');
+                    if (result.diyGoods == "服装") {
+                        $('#indexPanel').append('<h3 class="hide" id="h36">身高<kbd>' + '175cm</kbd>' + ' 体重<kbd>' +'45kg</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h37">胸围<kbd>' + '25cm</kbd>' + ' 腰围<kbd>' + '21cm</kbd>'+ ' 臀围<kbd>' + '23cm</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h38">风格偏好<kbd>' + '极简/中国风/牛仔/英伦/韩系/OL</kbd></h3>');
+                    }
+                    if (result.diyGoods == "汽车") {
+                        $('#indexPanel').append('<h3 class="hide" id="h36">收入水平<kbd>' + '中等偏上</kbd>' + ' 当前状况<kbd>' +'存款盈余</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h37">品牌商偏好<kbd>' + '北京汽车/北京现代/丰田/本田/一汽大众/宝马/奔驰/保时捷</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h38">类型偏好<kbd>' + '商务车/轿车/越野车/跑车</kbd></h3>');
+                    }
+                    if (result.diyGoods == "羊肉") {
+                        $('#indexPanel').append('<h3 class="hide" id="h36">评价偏好<kbd>' + '销量/价格/速度</kbd></h3>');
+                    }
                 } else {
                     $('#indexPanel').append('<h3 class="hide" id="h33">需求分析为<kbd>' + result.diy + '未知需求(ง •̀_•́)ง</kbd></h3>');
+                    if (result.diyGoods == "服装") {
+//                    $('#indexPanel').append('<h3 class="hide" id="h36">三维信息 </h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h34">身高<kbd>' + '175cm</kbd>' + ' 体重<kbd>' +'45kg</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h35">胸围<kbd>' + '25cm</kbd>' + ' 腰围<kbd>' + '21cm</kbd>'+ ' 臀围<kbd>' + '23cm</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h36">风格偏好<kbd>' + '极简/中国风/牛仔/英伦/韩系/OL</kbd></h3>');
+                    }
+                    if (result.diyGoods == "汽车") {
+                        $('#indexPanel').append('<h3 class="hide" id="h34">收入水平<kbd>' + '中等偏上</kbd>' + ' 当前状况<kbd>' +'存款盈余</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h35">品牌商偏好<kbd>' + '北京汽车/北京现代/丰田/本田/一汽大众/宝马/奔驰/保时捷</kbd></h3>');
+                        $('#indexPanel').append('<h3 class="hide" id="h36">类型偏好<kbd>' + '商务车/轿车/越野车/跑车</kbd></h3>');
+                    }
+                    if (result.diyGoods == "羊肉") {
+                        $('#indexPanel').append('<h3 class="hide" id="h34">评价偏好<kbd>' + '销量/价格/速度</kbd></h3>');
+                    }
                 }
+
             } else {
                 $('#indexPanel').append('<h3 class="hide" id="h31">您需要的商品我们这儿没有( >﹏<。)</h3>');
             }
@@ -261,13 +289,14 @@
                     $('#enter')[0].href = "smart_chain_fresh.html";
                     $('#enter').focus();
                 });
-            if (result.diyGoods == "服装")
-                animateAllH3(1, function() {
+            if (result.diyGoods == "服装") {
+                animateAllH3(1, function () {
                     $('#indexPanel').append('<br><a id="enter" class="button button-glow button-rounded button-jumbo button-highlight hide">进入选购</a>');
                     $('#enter').removeClass('hide');
                     $('#enter')[0].href = "desire_cloth_style_display.html";
                     $('#enter').focus();
                 });
+            }
             if (result.diy == "none") {
                 animateAllH3(1, function() {
                     $('#indexPanel').append('<br><a id="return" class="button button-glow button-rounded button-jumbo button-action hide">返回</a>');

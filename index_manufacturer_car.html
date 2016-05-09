@@ -242,6 +242,7 @@
                     $('#indexPanel').append('<h3 class="hide" id="h33">检测到关键字<kbd>' + result.desireTypeKey + '</kbd></h3>');
                     $('#indexPanel').append('<h3 class="hide" id="h34">需求类型为<kbd>' + result.desireType + '需求</kbd></h3>');
                     $('#indexPanel').append('<h3 class="hide" id="h35">需求分析为<kbd>' + result.diy + result.desireType + '需求(ง •̀_•́)ง</kbd></h3>');
+                    $('#indexPanel').append('<h3 class="hide" id="h36">身高<kbd>' + result.desireTypeKey + '</kbd></h3>');
                 } else {
                     $('#indexPanel').append('<h3 class="hide" id="h33">需求分析为<kbd>' + result.diy + '未知需求(ง •̀_•́)ง</kbd></h3>');
                 }
@@ -255,13 +256,16 @@
                     $('#enter')[0].href = "desire_cloth_style_display.html";
                     $('#enter').focus();
                 });
-            if (result.diyGoods == "服装")
-                animateAllH3(1, function() {
+            if (result.diyGoods == "服装") {
+//                $('#indexPanel').append('<h3 class="hide" id="h33">三维信息 </h3>');
+//                $('#indexPanel').append('<h3 class="hide" id="h33">身高<kbd>' + result.desireTypeKey + '</kbd></h3>');
+                animateAllH3(1, function () {
                     $('#indexPanel').append('<br><a id="enter" class="button button-glow button-rounded button-jumbo button-highlight hide">进入选购</a>');
                     $('#enter').removeClass('hide');
                     $('#enter')[0].href = "desire_cloth_style_display.html";
                     $('#enter').focus();
                 });
+                }
             if (result.diy == "none") {
                 animateAllH3(1, function() {
                     $('#indexPanel').append('<br><a id="return" class="button button-glow button-rounded button-jumbo button-action hide">返回</a>');
