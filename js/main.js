@@ -102,7 +102,7 @@ $(document).ready(function() {
         /* Act on the event */
         if (isMouseDown && event.which == 1) {
             $NowElement.css('left', event.pageX - $NowElement.parent().offset().left - mousePosX - parseInt($NowElement.parent().css('padding-left')));
-            $NowElement.css('top', event.pageY - $NowElement.parent().offset().top - mousePosY);
+            $NowElement.css('top', event.pageY - $NowElement.parent().offset().top - mousePosY - parseInt($NowElement.parent().css('padding-top')));
         } else {
 
         }
