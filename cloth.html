@@ -158,10 +158,10 @@
                         <div class="slider" id="slider7" style="margin-top: 28px;width: 100%;"></div>
                     </div>
                 </div>
-                <button class="button button-large button-plain button-border button-rounded" style="width: 100%;margin-top: 20px;">
+                <button class="button button-large button-plain button-border button-rounded" style="width: 100%;margin-top: 20px;" id='cor'>
                     协同设计
                 </button>
-                <button class="button button-large button-plain button-border button-rounded" style="width: 100%;margin-top: 10px;">
+                <button class="button button-large button-plain button-border button-rounded" style="width: 100%;margin-top: 10px;" id="confirm">
                     确认订单
                 </button>
             </div>
@@ -177,6 +177,14 @@
 <script>
 $(document).ready(function() {
     // slider
+    $('#cor').click(function(event) {
+        /* Act on the event */
+        window.location.href = '/3Dmodels/collaboration'
+    });
+    $('#confirm').click(function(event) {
+        /* Act on the event */
+        window.location.href = '/smart_chain.html'
+    });
     var $slider = $(".slider");
     $slider.slider({
         min: 0,

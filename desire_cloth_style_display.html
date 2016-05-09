@@ -28,10 +28,10 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <style>
-        .cloth-disp-origin {
-            box-shadow: rgba(0, 0, 0, 0) 0 0 0 0;
-            background-image: url(img/cloth/纹理.jpg);
-        }
+    .cloth-disp-origin {
+        box-shadow: rgba(0, 0, 0, 0) 0 0 0 0;
+        background-image: url(img/cloth/纹理.jpg);
+    }
     </style>
 </head>
 
@@ -94,7 +94,6 @@
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div style="position: relative;font-size: 40px;text-align: center;margin-top: 35px;">个性推荐</div>
-
     <div class="container-fluid" style="text-align: left;margin-top: 30px;">
         <div class="col-md-2 animated rubberBand">
             <div class="ui accordion" style="margin-top: 10px;">
@@ -371,6 +370,50 @@
                     $("#amount").val("￥" + ui.values[0] + " - ￥" + ui.values[1]);
                 },
             })
+    });
+    $(document).ready(function() {
+        findAllCloth(1);
+
+        function findAllCloth(pos) {
+            if ($('#cloth-disp' + pos).length) {
+                $('#cloth-disp' + pos).animo({
+                    animation: 'fadeInUp',
+                    duration: 0.5,
+                    delay: 0.1 * (pos - 1),
+                    timing: "easy-in"
+                }, findAllCloth(pos + 1));
+            }
+        }
+        $('.cloth-disp-origin').hover(function() {
+            $(this).append('<div class="cloth-disp-origin-cover"><button class="button button-caution button-circle button-small button-like" style="margin: auto 10px 10px 10px"><i class="fa fa-heart" style="color: white"></i></button><button class="button button-primary button-pill button-small button-try" style="margin: auto 10px 10px 10px">试穿看看？</button><button class="button button-circle button-small button-dislike" style="margin: auto 10px 10px 10px"><i class="fa fa-times" style="color: white"></i></button></div>');
+            var X = $(this).position().top;
+            var Y = $(this).position().left;
+            $('.cloth-disp-origin-cover').css({
+                'top': X,
+                'left': Y,
+                'height': $(this).height(),
+                'width': $(this).width(),
+                'padding-top': $(this).height() - 50,
+            })
+            $('.button-like').click(function(event) {
+                /* Act on the event */
+            });
+            $('.button-try').click(function(event) {
+                /* Act on the event */
+                window.location.href = 'cloth.html';
+            });
+            $('.button-dislike').click(function(event) {
+                /* Act on the event */
+            });
+            $('.button-like')
+            $('.button-like')
+            $('.cloth-disp-origin-cover').hover();
+        }, function() {
+            $('.cloth-disp-origin-cover').remove();
+        });
+        $('.cloth-disp-origin').click(function(event) {
+            $(this).parent().children('a').trigger('click');
+        });
     });
     </script>
 </body>
