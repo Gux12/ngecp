@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".uk-slidenav-previous").css("margin-left", "-20px;");
     $('#img-disp-1').hover(function() {
-        $(this).append('<div class="cloth-disp-origin-cover"><a href="cloth.html"><p class="p-content" style="margin-top: 20px;">历史记录1</p></a><a><p class="p-content" style="margin-top: 25px;">历史记录2</p></a><a><p class="p-content" style="margin-top: 25px;">历史记录3</p></a><a><p class="p-content" style="margin-top: 25px;">历史记录4</p></a></div>');
+        $(this).append('<div class="cloth-disp-origin-cover"><a href="cloth.html"><p class="p-content" style="margin-top: 20px;">定制需求记录： 定制腰带</p></a><a><p class="p-content" style="margin-top: 25px;">定制需求记录： 衬衫</p></a><a><p class="p-content" style="margin-top: 25px;">非定制需求记录： 皮鞋</p></a><a><p class="p-content" style="margin-top: 25px;">定制需求记录： 球鞋</p></a></div>');
         var X = $(this).position().top;
         var Y = $(this).position().left;
         $('.cloth-disp-origin-cover').css({
@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 
     $('#img-disp-2').hover(function() {
-        $(this).append('<div class="cloth-disp-origin-cover"><a href="cloth.html"><p class="p-content" style="margin-top: 20px;">历史记录1</p></a><a><p class="p-content" style="margin-top: 25px;">历史记录2</p></a><a><p class="p-content" style="margin-top: 25px;">历史记录3</p></a><a><p class="p-content" style="margin-top: 25px;">历史记录4</p></a></div>');
+        $(this).append('<div class="cloth-disp-origin-cover"><a href="cloth.html"><p class="p-content" style="margin-top: 20px;">女士创意衬衫设计</p></a><a><p class="p-content" style="margin-top: 25px;">女士创意裙子设计</p></a><a><p class="p-content" style="margin-top: 25px;">女士创意围巾设计</p></a><a><p class="p-content" style="margin-top: 25px;">女士创意帽子设计</p></a></div>');
         var X = $(this).position().top;
         var Y = $(this).position().left;
         $('.cloth-disp-origin-cover').css({
