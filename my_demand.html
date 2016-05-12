@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/animate-animo.min.css">
     <link rel="stylesheet" href="css/buttons.min.css">
-    <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
     <link rel="stylesheet" href="css/flat-ui.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/lightbox.css">
@@ -28,6 +27,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/material_icon.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/slidenav.min.css">
     <style>
         .shadow-box {
             padding: 20px;
@@ -113,7 +114,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div style="position: relative;font-size: 40px;text-align: center;margin-top: 35px;">我的需求</div>
 <div class="container-fluid" style="text-align: left;margin-top: 100px;">
-    <div class="col-md-2 col-md-offset-1 animated rubberBand shadow-box" style="height: 280px;">
+    <div class="col-md-2 col-md-offset-1 shadow-box" style="height: 280px;">
         <div class="col-md-12 col-md-offset-0">
             <button id="button-1" class="mdl-button mdl-js-button apply-button" style="width: 100%;height: 50px;margin-top: 20px;text-align: left;">
                 <i class="material-icons" style="color: #4285f4">label</i>
@@ -129,7 +130,7 @@
             <!--</button>-->
         </div>
     </div>
-    <div class="col-md-6 col-md-offset-1 animated rubberBand shadow-box" style="height: 600px;">
+    <div class="col-md-6 col-md-offset-1 shadow-box" style="height: 600px;">
         <div class="row">
             <div class="col-lg-9"></div>
             <div class="col-md-3">
@@ -141,138 +142,149 @@
         </div>
         <div class="row" style="margin-top: 60px;">
             <div class="col-md-10 col-md-offset-1">
-                <table id="table-1" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align="center">
-                    <thead>
-                    <tr>
-                        <th class="mdl-data-table__cell--non-numeric">商品名称</th>
-                        <th>商品编号</th>
-                        <th>商品价格</th>
-                        <th>商品尺寸</th>
-                        <th>定制内容</th>
-                        <th>交易日期</th>
-                        <th>交易备注</th>
-                        <a href="_index.html"></a>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">腰带</td>
-                        <td>105486</td>
-                        <td>$290</td>
-                        <td>XL</td>
-                        <td>自选设计师</td>
-                        <td>2016/1/3</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">衬衫</td>
-                        <td>105427</td>
-                        <td>$125</td>
-                        <td>XL</td>
-                        <td>自定义图案</td>
-                        <td>2016/1/1</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">卫衣</td>
-                        <td>105350</td>
-                        <td>$235</td>
-                        <td>L</td>
-                        <td>自定义图案</td>
-                        <td>2015/12/13</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">裤子</td>
-                        <td>105186</td>
-                        <td>$335</td>
-                        <td>XL</td>
-                        <td>自定义原材料</td>
-                        <td>2015/11/3</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">围巾</td>
-                        <td>104486</td>
-                        <td>$105</td>
-                        <td> - </td>
-                        <td>自定义原材料</td>
-                        <td>2015/10/9</td>
-                        <td>无</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <table id="table-2" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp hidden" align="center">
-                    <thead>
-                    <tr>
-                        <th class="mdl-data-table__cell--non-numeric">商品名称</th>
-                        <th>商品编号</th>
-                        <th>商品价格</th>
-                        <th>商品尺寸</th>
-                        <th>交易日期</th>
-                        <th>交易备注</th>
-                        <a href="_index.html"></a>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">皮鞋</td>
-                        <td>205486</td>
-                        <td>$600</td>
-                        <td>XL</td>
-                        <td>2016/3/16</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">球鞋</td>
-                        <td>205427</td>
-                        <td>$925</td>
-                        <td>XL</td>
-                        <td>2016/2/11</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">卫衣</td>
-                        <td>205350</td>
-                        <td>$235</td>
-                        <td>L</td>
-                        <td>2015/11/17</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">羽绒服</td>
-                        <td>205186</td>
-                        <td>$1000</td>
-                        <td>L</td>
-                        <td>2015/9/3</td>
-                        <td>无</td>
-                    </tr>
-                    <tr>
-                        <td class="mdl-data-table__cell--non-numeric">护膝</td>
-                        <td>204486</td>
-                        <td>$505</td>
-                        <td>XL</td>
-                        <td>2015/8/17</td>
-                        <td>无</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div data-uk-slideset="{default: 1}" class="uk-slidenav-position">
+                    <ul class="uk-slideset" style="padding: 0px;">
+                        <li style="list-style-type:none;">
+                            <table id="table-1" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align="center">
+                                <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric">商品名称</th>
+                                    <th>商品编号</th>
+                                    <th>商品价格</th>
+                                    <th>商品尺寸</th>
+                                    <th>定制内容</th>
+                                    <th>交易日期</th>
+                                    <th>交易备注</th>
+                                    <a href="_index.html"></a>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">腰带</td>
+                                    <td>105486</td>
+                                    <td>$290</td>
+                                    <td>XL</td>
+                                    <td>自选设计师</td>
+                                    <td>2016/1/3</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">衬衫</td>
+                                    <td>105427</td>
+                                    <td>$125</td>
+                                    <td>XL</td>
+                                    <td>自定义图案</td>
+                                    <td>2016/1/1</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">卫衣</td>
+                                    <td>105350</td>
+                                    <td>$235</td>
+                                    <td>L</td>
+                                    <td>自定义图案</td>
+                                    <td>2015/12/13</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">裤子</td>
+                                    <td>105186</td>
+                                    <td>$335</td>
+                                    <td>XL</td>
+                                    <td>自定义原材料</td>
+                                    <td>2015/11/3</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">围巾</td>
+                                    <td>104486</td>
+                                    <td>$105</td>
+                                    <td> - </td>
+                                    <td>自定义原材料</td>
+                                    <td>2015/10/9</td>
+                                    <td>无</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li style="list-style-type:none;">
+                            <table id="table-2" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align="center">
+                                <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric">商品名称</th>
+                                    <th>商品编号</th>
+                                    <th>商品价格</th>
+                                    <th>商品尺寸</th>
+                                    <th>交易日期</th>
+                                    <th>交易备注</th>
+                                    <!--<a href="_index.html"></a>-->
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">皮鞋</td>
+                                    <td>205486</td>
+                                    <td>$600</td>
+                                    <td>XL</td>
+                                    <td>2016/3/16</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">球鞋</td>
+                                    <td>205427</td>
+                                    <td>$925</td>
+                                    <td>XL</td>
+                                    <td>2016/2/11</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">卫衣</td>
+                                    <td>205350</td>
+                                    <td>$235</td>
+                                    <td>L</td>
+                                    <td>2015/11/17</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">羽绒服</td>
+                                    <td>205186</td>
+                                    <td>$1000</td>
+                                    <td>L</td>
+                                    <td>2015/9/3</td>
+                                    <td>无</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">护膝</td>
+                                    <td>204486</td>
+                                    <td>$505</td>
+                                    <td>XL</td>
+                                    <td>2015/8/17</td>
+                                    <td>无</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                    <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous" style="margin-top: -30px;margin-left: -80px;"></a>
+                    <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next" style="margin-top: -30px;margin-right: -80px;"></a>
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <button class="ui blue basic button" style="width: 100px;">查看记录</button>
+                <button class="ui orange basic button" style="width: 100px;margin-left: 50px;">删除记录</button>
             </div>
         </div>
-        <div class="row" style="margin-top: 50px;">
-            <button class="ui blue basic button" style="width: 100px;">查看记录</button>
-            <button class="ui orange basic button" style="width: 100px;margin-left: 50px;">删除记录</button>
-        </div>
     </div>
-</div>
-<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-<script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
 <script src="js/vendor/semantic.min.js"></script>
 <script src="js/vendor/animo.min.js"></script>
-<!-- <script src="js/vendor/jquery-ui.js"></script> -->
 <script src="js/vendor/flat-ui.js"></script>
 <script src="js/vendor/lightbox.js"></script>
 <script src="js/vendor/material.min.js"></script>
+<script src="js/vendor/uikit.min.js"></script>
+<script src="js/vendor/slideset.min.js"></script>
 <script src="js/main2.js"></script>
 <script>
     $(window).load(function() {
@@ -281,32 +293,17 @@
             $(this).removeClass("unclick-background");
             $(this).addClass("click-background");
         });
-        $("#button-1").click(function () {
-            if ($("#table-1").hasClass("hidden")) {
-                $("table").addClass("hidden");
-                $("#table-1").removeClass("hidden");
-            }
-        });
-        $("#button-2").click(function () {
-            if ($("#table-2").hasClass("hidden")) {
-                $("table").addClass("hidden");
-                $("#table-2").removeClass("hidden");
-            }
-        });
-        //$(".mdl-button").mouseenter(function() {
-        //  $(this).css("background","rgba(0,0,0,0.05)");
-        //});
-        //$(".mdl-button").mouseleave(function() {
-        //  $(this).css("background","rgba(0,0,0,0)");
-        //});
-//        $(".apply-button").click(function() {
-//            $(".mdl-layout__header").css("background","rgb(66,133,244)");
+//        $("#button-1").click(function () {
+//            if ($("#table-1").hasClass("hidden")) {
+//                $("table").addClass("hidden");
+//                $("#table-1").removeClass("hidden");
+//            }
 //        });
-//        $(".state-button").click(function() {
-//            $(".mdl-layout__header").css("background","rgb(236,164,3)");
-//        });
-//        $(".history-button").click(function() {
-//            $(".mdl-layout__header").css("background","rgb(15,157,88)");
+//        $("#button-2").click(function () {
+//            if ($("#table-2").hasClass("hidden")) {
+//                $("table").addClass("hidden");
+//                $("#table-2").removeClass("hidden");
+//            }
 //        });
     });
 
